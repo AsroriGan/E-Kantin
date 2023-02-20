@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 20 Feb 2023 17:17:02 at https://foodia.dexignzone.com/xhtml/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F  -%F  -%l "en, *" https://foodia.dexignzone.com/xhtml/index.html -O1 "E:\Tem\E-Kantin" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:17:14	Error: 	"Not Found" (404) at link https://makaanlelo.com/tf_products_007/foodia/xhtml/social-image.png (from https://foodia.dexignzone.com/xhtml/index.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 43 seconds : 210 links scanned, 208 files written (15851293 bytes overall) [15903432 bytes received at 154402 bytes/sec], 8.4 requests per connection
+(1 errors, 0 warnings, 0 messages)
