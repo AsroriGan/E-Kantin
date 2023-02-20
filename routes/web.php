@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\categoricontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Beranda',[BerandaController::class, 'beranda']);
+Route::get('/beranda',[BerandaController::class, 'beranda']);
+Route::get('/kategori',[categoricontroller::class, 'index']);
+
