@@ -24,7 +24,7 @@
     <!-- Stylesheets -->
 	<link rel="stylesheet" href="{{ asset('templateuser/assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css') }}">
     <link rel="stylesheet" href="{{ asset('templateuser/assets/vendor/swiper/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('templateuser/assets/css/style.css') }}">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
