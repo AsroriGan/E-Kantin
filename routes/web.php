@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\categoricontroller;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,7 @@ Route::get('/', function () {
 
 Route::get('/beranda',[BerandaController::class, 'beranda']);
 Route::get('/kategori',[categoricontroller::class, 'index']);
+
+//Profile 
+Route::get('/profile',[ProfileController::class, 'profile']);
 
