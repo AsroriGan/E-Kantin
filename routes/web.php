@@ -16,7 +16,7 @@ use App\Http\Controllers\categoricontroller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landinguser.home.index');
 });
 
 Route::get('/beranda',[BerandaController::class, 'beranda']);
