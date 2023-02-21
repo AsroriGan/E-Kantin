@@ -63,7 +63,7 @@
                         <div class="page-title d-flex flex-column align-items-start me-3 py-2 py-lg-0 gap-2">
                             <!--begin::Title-->
                             <h1 class="d-flex text-dark fw-bold m-0 fs-3">
-                                New Card
+                                Daftar Kategori
                             </h1>
                             <!--end::Title-->
 
@@ -71,25 +71,13 @@
                             <ul class="breadcrumb breadcrumb-dot fw-semibold text-gray-600 fs-7">
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-gray-600">
-                                    <a href="../../../index.html" class="text-gray-600 text-hover-primary">
-                                        Home </a>
+                                    <a href="/" class="text-gray-600 text-hover-primary">
+                                        Beranda</a>
                                 </li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-gray-600">
-                                    Utilities </li>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <li class="breadcrumb-item text-gray-600">
-                                    Modals </li>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <li class="breadcrumb-item text-gray-600">
-                                    Forms </li>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <li class="breadcrumb-item text-gray-500">
-                                    New Card </li>
+                                    daftar kategori</li>
                                 <!--end::Item-->
                             </ul>
                             <!--end::Breadcrumb-->
@@ -98,91 +86,10 @@
                         <!--begin::Actions-->
                         <div class="d-flex align-items-center">
                             <!--begin::Button-->
-                            <a href="#"
-                                class="btn btn-icon btn-color-primary bg-body w-35px h-35px w-lg-40px h-lg-40px me-3"
-                                data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">
-                                <!--begin::Svg Icon | path: icons/duotune/files/fil008.svg-->
-                                <span class="svg-icon svg-icon-2 svg-icon-md-1"><svg width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.3"
-                                            d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM11.7 17.7L16 14C16.4 13.6 16.4 12.9 16 12.5C15.6 12.1 15.4 12.6 15 13L11 16L9 15C8.6 14.6 8.4 14.1 8 14.5C7.6 14.9 8.1 15.6 8.5 16L10.3 17.7C10.5 17.9 10.8 18 11 18C11.2 18 11.5 17.9 11.7 17.7Z"
-                                            fill="currentColor" />
-                                        <path
-                                            d="M10.4343 15.4343L9.25 14.25C8.83579 13.8358 8.16421 13.8358 7.75 14.25C7.33579 14.6642 7.33579 15.3358 7.75 15.75L10.2929 18.2929C10.6834 18.6834 11.3166 18.6834 11.7071 18.2929L16.25 13.75C16.6642 13.3358 16.6642 12.6642 16.25 12.25C15.8358 11.8358 15.1642 11.8358 14.75 12.25L11.5657 15.4343C11.2533 15.7467 10.7467 15.7467 10.4343 15.4343Z"
-                                            fill="currentColor" />
-                                        <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="currentColor" />
-                                    </svg>
-                                </span>
-                                <!--end::Svg Icon-->
-                            </a>
+                            <a href="#" class="btn btn-primary er fs-6 px-8 py-4" data-bs-toggle="modal"
+                                data-bs-target="#kt_modal_new_card">
+                                Tambah Kategori</a>
                             <!--end::Button-->
-
-                            <!--begin::Button-->
-                            <a href="#"
-                                class="btn btn-icon btn-color-success bg-body w-35px h-35px w-lg-40px h-lg-40px me-3"
-                                data-bs-toggle="modal" data-bs-target="#kt_modal_create_campaign">
-                                <!--begin::Svg Icon | path: icons/duotune/files/fil005.svg-->
-                                <span class="svg-icon svg-icon-2 svg-icon-md-1"><svg width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.3"
-                                            d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM16 13.5L12.5 13V10C12.5 9.4 12.6 9.5 12 9.5C11.4 9.5 11.5 9.4 11.5 10L11 13L8 13.5C7.4 13.5 7 13.4 7 14C7 14.6 7.4 14.5 8 14.5H11V18C11 18.6 11.4 19 12 19C12.6 19 12.5 18.6 12.5 18V14.5L16 14C16.6 14 17 14.6 17 14C17 13.4 16.6 13.5 16 13.5Z"
-                                            fill="currentColor" />
-                                        <rect x="11" y="19" width="10" height="2"
-                                            rx="1" transform="rotate(-90 11 19)" fill="currentColor" />
-                                        <rect x="7" y="13" width="10" height="2"
-                                            rx="1" fill="currentColor" />
-                                        <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="currentColor" />
-                                    </svg>
-                                </span>
-                                <!--end::Svg Icon-->
-                            </a>
-                            <!--end::Button-->
-
-                            <!--begin::Button-->
-                            <a href="#"
-                                class="btn btn-icon btn-color-warning bg-body w-35px h-35px w-lg-40px h-lg-40px me-3"
-                                data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">
-                                <!--begin::Svg Icon | path: icons/duotune/general/gen005.svg-->
-                                <span class="svg-icon svg-icon-2 svg-icon-md-1"><svg width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.3"
-                                            d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM12.5 18C12.5 17.4 12.6 17.5 12 17.5H8.5C7.9 17.5 8 17.4 8 18C8 18.6 7.9 18.5 8.5 18.5L12 18C12.6 18 12.5 18.6 12.5 18ZM16.5 13C16.5 12.4 16.6 12.5 16 12.5H8.5C7.9 12.5 8 12.4 8 13C8 13.6 7.9 13.5 8.5 13.5H15.5C16.1 13.5 16.5 13.6 16.5 13ZM12.5 8C12.5 7.4 12.6 7.5 12 7.5H8C7.4 7.5 7.5 7.4 7.5 8C7.5 8.6 7.4 8.5 8 8.5H12C12.6 8.5 12.5 8.6 12.5 8Z"
-                                            fill="currentColor" />
-                                        <rect x="7" y="17" width="6" height="2"
-                                            rx="1" fill="currentColor" />
-                                        <rect x="7" y="12" width="10" height="2"
-                                            rx="1" fill="currentColor" />
-                                        <rect x="7" y="7" width="6" height="2"
-                                            rx="1" fill="currentColor" />
-                                        <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="currentColor" />
-                                    </svg>
-                                </span>
-                                <!--end::Svg Icon-->
-                            </a>
-                            <!--end::Button-->
-
-                            <!--begin::Daterange-->
-                            <a href="#" class="btn btn-flex bg-body h-35px h-lg-40px px-5"
-                                id="kt_dashboard_daterangepicker" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                                data-bs-trigger="hover" title="Select dashboard daterange">
-                                <span class="me-4">
-                                    <span class="text-muted fw-semibold me-1"
-                                        id="kt_dashboard_daterangepicker_title">Today</span>
-                                    <span class="text-primary fw-bold" id="kt_dashboard_daterangepicker_date">
-                                        Feb 20 </span>
-                                </span>
-
-                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-                                <span class="svg-icon svg-icon-4 m-0"><svg width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
-                                            fill="currentColor" />
-                                    </svg>
-                                </span>
-                                <!--end::Svg Icon-->
-                            </a>
-                            <!--end::Daterange-->
                         </div>
                         <!--end::Actions-->
                     </div>
@@ -196,36 +103,310 @@
                     <!--begin::Post-->
                     <div class="content flex-row-fluid" id="kt_content">
                         <!--begin::Card-->
-                        <div class="card">
-                            <!--begin::Card body-->
-                            <div class="card-body">
-                                <!--begin::Heading-->
-                                <div class="card-px text-center pt-15 pb-15">
-                                    <!--begin::Title-->
-                                    <h2 class="fs-2x fw-bold mb-0">New Card Modal Example</h2>
-                                    <!--end::Title-->
+                        <div class="card card-xl-stretch mb-xl-8">
+                            <!--begin::Header-->
 
-                                    <!--begin::Description-->
-                                    <p class="text-gray-400 fs-4 fw-semibold py-7">
-                                        Click on the below buttons to launch <br />a new card example. </p>
-                                    <!--end::Description-->
+                            <!--end::Header-->
 
-                                    <!--begin::Action-->
-                                    <a href="#" class="btn btn-primary er fs-6 px-8 py-4"
-                                        data-bs-toggle="modal" data-bs-target="#kt_modal_new_card">
-                                        Add New Card </a>
-                                    <!--end::Action-->
-                                </div>
-                                <!--end::Heading-->
+                            <!--begin::Body-->
+                            <div class="card-body pt-5">
+                                @foreach ($data as $data)
+                                    <!--begin::Item-->
+                                    <div class="d-flex align-items-center mb-7">
+                                        <!--begin::Symbol-->
+                                        <div class="symbol symbol-50px me-5">
+                                            <span class="symbol-label bg-light-success">
+                                                <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                                                <span class="svg-icon svg-icon-2x svg-icon-success"><svg width="24"
+                                                        height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path opacity="0.3"
+                                                            d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
+                                                            fill="currentColor" />
+                                                        <path
+                                                            d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                                <!--end::Svg Icon-->
+                                            </span>
+                                        </div>
+                                        <!--end::Symbol-->
 
-                                <!--begin::Illustration-->
-                                <div class="text-center pb-15 px-5">
-                                    <img src="../../../assets/media/illustrations/sketchy-1/6.png" alt=""
-                                        class="mw-100 h-200px h-sm-325px" />
-                                </div>
-                                <!--end::Illustration-->
+                                        <!--begin::Text-->
+                                        <div class="d-flex align-items-center w-100">
+                                            <div class="p-2">
+                                                <a href="#"
+                                                    class="text-dark text-hover-primary fs-6 fw-bold">{{ $data->kategori }}</a>
+                                            </div>
+                                            <div class="p-2 ms-auto">
+                                                <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-bs-toggle="modal"
+                                                data-bs-target="#edit_kategori{{$data->id}}">
+                                                    Edit</a>
+                                                <a href="#" class="btn btn-sm btn-light btn-active-light-primary">
+                                                    Delete</a>
+                                            </div>
+                                            {{-- <span class="text-muted fw-bold">Project Manager</span> --}}
+                                        </div>
+                                        <!--end::Text-->
+                                    </div>
+                                    <!--end::Item-->
+                                    <!--begin::Modal - New Card-->
+    <div class="modal fade" id="edit_kategori{{$data->id}}" tabindex="-1" aria-hidden="true">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog modal-dialog-centered mw-650px">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header">
+                    <!--begin::Modal title-->
+                    <h2>Edit Kategori</h2>
+                    <!--end::Modal title-->
+
+                    <!--begin::Close-->
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                        <span class="svg-icon svg-icon-1"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.5" x="6" y="17.3137" width="16"
+                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
+                                    fill="currentColor" />
+                                <rect x="7.41422" y="6" width="16" height="2"
+                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                            </svg>
+
+                        </span>
+                        <!--end::Svg Icon-->
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--end::Modal header-->
+
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                    <!--begin::Form-->
+                    <form id="kt_modal_new_card_form{{$data->id}}" class="form needs-validation" method="POST"
+                        action="/kategoripost" novalidate="novalidate">
+                        @csrf
+                        <!--begin::Input group-->
+                        <div class="d-flex flex-column mb-7 fv-row">
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+                                <span class="required">Nama Kategori</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                    title="Masukkan nama kategori seperti contoh dibawah ini"></i>
+                            </label>
+                            <!--end::Label-->
+                            <input type="hidden" name="ikon" value="try">
+                            <input type="text" class="form-control form-control-solid"
+                                placeholder="Makanan Ringan" name="kategori" value="{{$data->kategori}}" required />
+                            <div class="invalid-feedback">
+                                Harap isi bidang ini
                             </div>
-                            <!--end::Card body-->
+                        </div>
+                        <!--end::Input group-->
+                        <!--begin::Actions-->
+                        <div class="text-center pt-15">
+                            <button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">
+                                Batal
+                            </button>
+
+                            <button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
+                                <span class="indicator-label">
+                                    Kirim
+                                </span>
+                                <span class="indicator-progress">
+                                    Please wait... <span
+                                        class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <!--end::Actions-->
+                    </form>
+                    <!--end::Form-->
+                </div>
+                <!--end::Modal body-->
+            </div>
+            <!--end::Modal content-->
+        </div>
+        <!--end::Modal dialog-->
+    </div>
+    <!--end::Modal - New Card-->
+                                @endforeach
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-7">
+                                    <!--begin::Symbol-->
+                                    <div class="symbol symbol-50px me-5">
+                                        <span class="symbol-label bg-light-success">
+                                            <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                                            <span class="svg-icon svg-icon-2x svg-icon-success"><svg width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </div>
+                                    <!--end::Symbol-->
+
+                                    <!--begin::Text-->
+                                    <div class="d-flex align-items-center w-100">
+                                        <div class="p-2">
+                                            <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">Makanan
+                                                Ringan</a>
+                                        </div>
+                                        <div class="p-2 ms-auto">
+                                            <a href="#" class="btn btn-sm btn-light btn-active-light-primary">
+                                                Edit</a>
+                                            <a href="#" class="btn btn-sm btn-light btn-active-light-primary">
+                                                Delete</a>
+                                        </div>
+                                        {{-- <span class="text-muted fw-bold">Project Manager</span> --}}
+                                    </div>
+                                    <!--end::Text-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-7">
+                                    <!--begin::Symbol-->
+                                    <div class="symbol symbol-50px me-5">
+                                        <span class="symbol-label bg-light-warning">
+                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                            <span class="svg-icon svg-icon-2x svg-icon-warning"><svg width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </div>
+                                    <!--end::Symbol-->
+
+                                    <!--begin::Text-->
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">Concept
+                                            Design</a>
+
+                                        <span class="text-muted fw-bold">Art Director</span>
+                                    </div>
+                                    <!--end::Text-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-7">
+                                    <!--begin::Symbol-->
+                                    <div class="symbol symbol-50px me-5">
+                                        <span class="symbol-label bg-light-primary">
+                                            <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->
+                                            <span class="svg-icon svg-icon-2x svg-icon-primary"><svg width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M20 3H4C2.89543 3 2 3.89543 2 5V16C2 17.1046 2.89543 18 4 18H4.5C5.05228 18 5.5 18.4477 5.5 19V21.5052C5.5 22.1441 6.21212 22.5253 6.74376 22.1708L11.4885 19.0077C12.4741 18.3506 13.6321 18 14.8167 18H20C21.1046 18 22 17.1046 22 16V5C22 3.89543 21.1046 3 20 3Z"
+                                                        fill="currentColor" />
+                                                    <rect x="6" y="12" width="7"
+                                                        height="2" rx="1" fill="currentColor" />
+                                                    <rect x="6" y="7" width="12"
+                                                        height="2" rx="1" fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </div>
+                                    <!--end::Symbol-->
+
+                                    <!--begin::Text-->
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">Functional
+                                            Logics</a>
+
+                                        <span class="text-muted fw-bold">Lead Developer</span>
+                                    </div>
+                                    <!--end::Text-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-7">
+                                    <!--begin::Symbol-->
+                                    <div class="symbol symbol-50px me-5">
+                                        <span class="symbol-label bg-light-danger">
+                                            <!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+                                            <span class="svg-icon svg-icon-2x svg-icon-danger"><svg width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z"
+                                                        fill="currentColor" />
+                                                    <path opacity="0.3"
+                                                        d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </div>
+                                    <!--end::Symbol-->
+
+                                    <!--begin::Text-->
+                                    <div class="d-flex flex-column">
+                                        <a href="#"
+                                            class="text-dark text-hover-primary fs-6 fw-bold">Development</a>
+
+                                        <span class="text-muted fw-bold">DevOps</span>
+                                    </div>
+                                    <!--end::Text-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center ">
+                                    <!--begin::Symbol-->
+                                    <div class="symbol symbol-50px me-5">
+                                        <span class="symbol-label bg-light-info">
+                                            <!--begin::Svg Icon | path: icons/duotune/general/gen049.svg-->
+                                            <span class="svg-icon svg-icon-2x svg-icon-info"><svg width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M12.0006 11.1542C13.1434 11.1542 14.0777 10.22 14.0777 9.0771C14.0777 7.93424 13.1434 7 12.0006 7C10.8577 7 9.92348 7.93424 9.92348 9.0771C9.92348 10.22 10.8577 11.1542 12.0006 11.1542Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M15.5652 13.814C15.5108 13.6779 15.4382 13.551 15.3566 13.4331C14.9393 12.8163 14.2954 12.4081 13.5697 12.3083C13.479 12.2993 13.3793 12.3174 13.3067 12.3718C12.9257 12.653 12.4722 12.7981 12.0006 12.7981C11.5289 12.7981 11.0754 12.653 10.6944 12.3718C10.6219 12.3174 10.5221 12.2902 10.4314 12.3083C9.70578 12.4081 9.05272 12.8163 8.64456 13.4331C8.56293 13.551 8.49036 13.687 8.43595 13.814C8.40875 13.8684 8.41781 13.9319 8.44502 13.9864C8.51759 14.1133 8.60828 14.2403 8.68991 14.3492C8.81689 14.5215 8.95295 14.6757 9.10715 14.8208C9.23413 14.9478 9.37925 15.0657 9.52439 15.1836C10.2409 15.7188 11.1026 15.9999 11.9915 15.9999C12.8804 15.9999 13.7421 15.7188 14.4586 15.1836C14.6038 15.0748 14.7489 14.9478 14.8759 14.8208C15.021 14.6757 15.1661 14.5215 15.2931 14.3492C15.3838 14.2312 15.4655 14.1133 15.538 13.9864C15.5833 13.9319 15.5924 13.8684 15.5652 13.814Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </div>
+                                    <!--end::Symbol-->
+
+                                    <!--begin::Text-->
+                                    <div class="d-flex flex-column">
+                                        <a href="#"
+                                            class="text-dark text-hover-primary fs-6 fw-bold">Testing</a>
+
+                                        <span class="text-muted fw-bold">QA Managers</span>
+                                    </div>
+                                    <!--end::Text-->
+                                </div>
+                                <!--end::Item-->
+
+                            </div>
+                            <!--end::Body-->
                         </div>
                         <!--end::Card-->
                     </div>
@@ -288,11 +469,10 @@
                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
                         <span class="svg-icon svg-icon-1"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16"
-                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
-                                    fill="currentColor" />
-                                <rect x="7.41422" y="6" width="16" height="2"
-                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
+                                    rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                                <rect x="7.41422" y="6" width="16" height="2" rx="1"
+                                    transform="rotate(45 7.41422 6)" fill="currentColor" />
                             </svg>
 
                         </span>
@@ -392,8 +572,7 @@
 
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <img src="../../../assets/media/avatars/300-14.jpg"
-                                                    alt="img" />
+                                                <img src="../../../assets/media/avatars/300-14.jpg" alt="img" />
                                             </div>
                                             <!--end::User-->
 
@@ -439,8 +618,7 @@
                                         <div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <img src="../../../assets/media/avatars/300-20.jpg"
-                                                    alt="img" />
+                                                <img src="../../../assets/media/avatars/300-20.jpg" alt="img" />
                                             </div>
                                             <!--end::User-->
 
@@ -558,8 +736,8 @@
                                 <!--begin::Timeline heading-->
                                 <div class="mb-5 pe-3">
                                     <!--begin::Title-->
-                                    <a href="#"
-                                        class="fs-5 fw-semibold text-gray-800 text-hover-primary mb-2">3 New Incoming
+                                    <a href="#" class="fs-5 fw-semibold text-gray-800 text-hover-primary mb-2">3
+                                        New Incoming
                                         Project Files:</a>
                                     <!--end::Title-->
 
@@ -757,8 +935,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top"
-                                            title="Marcus Dotson">
+                                            data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
                                             <img src="../../../assets/media/avatars/300-2.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
@@ -948,8 +1125,8 @@
                                         class="notice d-flex bg-light-primary rounded border-primary border border-dashed min-w-lg-600px flex-shrink-0 p-6">
                                         <!--begin::Icon-->
                                         <!--begin::Svg Icon | path: icons/duotune/coding/cod004.svg-->
-                                        <span class="svg-icon svg-icon-2tx svg-icon-primary me-4"><svg
-                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        <span class="svg-icon svg-icon-2tx svg-icon-primary me-4"><svg width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path opacity="0.3"
                                                     d="M19.0687 17.9688H11.0687C10.4687 17.9688 10.0687 18.3687 10.0687 18.9688V19.9688C10.0687 20.5687 10.4687 20.9688 11.0687 20.9688H19.0687C19.6687 20.9688 20.0687 20.5687 20.0687 19.9688V18.9688C20.0687 18.3687 19.6687 17.9688 19.0687 17.9688Z"
@@ -1204,11 +1381,10 @@
                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
                         <span class="svg-icon svg-icon-2"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16"
-                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
-                                    fill="currentColor" />
-                                <rect x="7.41422" y="6" width="16" height="2"
-                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
+                                    rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                                <rect x="7.41422" y="6" width="16" height="2" rx="1"
+                                    transform="rotate(45 7.41422 6)" fill="currentColor" />
                             </svg>
 
                         </span>
@@ -1242,8 +1418,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#"
-                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
+                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                        Cox</a>
                                     <span class="text-muted fs-7 mb-1">2 mins</span>
                                 </div>
                                 <!--end::Details-->
@@ -1305,8 +1481,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#"
-                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
+                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                        Cox</a>
                                     <span class="text-muted fs-7 mb-1">1 Hour</span>
                                 </div>
                                 <!--end::Details-->
@@ -1367,8 +1543,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#"
-                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
+                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                        Cox</a>
                                     <span class="text-muted fs-7 mb-1">3 Hours</span>
                                 </div>
                                 <!--end::Details-->
@@ -1430,8 +1606,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#"
-                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
+                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                        Cox</a>
                                     <span class="text-muted fs-7 mb-1">5 Hours</span>
                                 </div>
                                 <!--end::Details-->
@@ -1493,8 +1669,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#"
-                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
+                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                        Cox</a>
                                     <span class="text-muted fs-7 mb-1">Just now</span>
                                 </div>
                                 <!--end::Details-->
@@ -1533,8 +1709,7 @@
                             data-bs-toggle="tooltip" title="Coming soon"><i
                                 class="bi bi-paperclip fs-3"></i></button>
                         <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button"
-                            data-bs-toggle="tooltip" title="Coming soon"><i
-                                class="bi bi-upload fs-3"></i></button>
+                            data-bs-toggle="tooltip" title="Coming soon"><i class="bi bi-upload fs-3"></i></button>
                     </div>
                     <!--end::Actions-->
 
@@ -1554,8 +1729,7 @@
     <div id="kt_shopping_cart" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="cart"
         data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
         data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_drawer_shopping_cart_toggle"
-        data-kt-drawer-close="#kt_drawer_shopping_cart_close">
+        data-kt-drawer-toggle="#kt_drawer_shopping_cart_toggle" data-kt-drawer-close="#kt_drawer_shopping_cart_close">
 
         <!--begin::Messenger-->
         <div class="card card-flush w-100 rounded-0">
@@ -1572,11 +1746,10 @@
                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
                         <span class="svg-icon svg-icon-2"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16"
-                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
-                                    fill="currentColor" />
-                                <rect x="7.41422" y="6" width="16" height="2"
-                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
+                                    rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                                <rect x="7.41422" y="6" width="16" height="2" rx="1"
+                                    transform="rotate(45 7.41422 6)" fill="currentColor" />
                             </svg>
 
                         </span>
@@ -2042,108 +2215,7 @@
     <!--end::Main-->
 
     <!--begin::Engage-->
-    <div class="app-engage " id="kt_app_engage">
-        <!--begin::Prebuilts toggle-->
-        <a href="#" data-bs-toggle="modal" data-bs-target="#kt_app_engage_prebuilts_modal"
-            class="app-engage-btn hover-dark">
-            <!--begin::Svg Icon | path: icons/duotune/abstract/abs042.svg-->
-            <span class="svg-icon svg-icon-1 pt-1 mb-2"><svg width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M18 21.6C16.6 20.4 9.1 20.3 6.3 21.2C5.7 21.4 5.1 21.2 4.7 20.8L2 18C4.2 15.8 10.8 15.1 15.8 15.8C16.2 18.3 17 20.5 18 21.6ZM18.8 2.8C18.4 2.4 17.8 2.20001 17.2 2.40001C14.4 3.30001 6.9 3.2 5.5 2C6.8 3.3 7.4 5.5 7.7 7.7C9 7.9 10.3 8 11.7 8C15.8 8 19.8 7.2 21.5 5.5L18.8 2.8Z"
-                        fill="currentColor" />
-                    <path opacity="0.3"
-                        d="M21.2 17.3C21.4 17.9 21.2 18.5 20.8 18.9L18 21.6C15.8 19.4 15.1 12.8 15.8 7.8C18.3 7.4 20.4 6.70001 21.5 5.60001C20.4 7.00001 20.2 14.5 21.2 17.3ZM8 11.7C8 9 7.7 4.2 5.5 2L2.8 4.8C2.4 5.2 2.2 5.80001 2.4 6.40001C2.7 7.40001 3.00001 9.2 3.10001 11.7C3.10001 15.5 2.40001 17.6 2.10001 18C3.20001 16.9 5.3 16.2 7.8 15.8C8 14.2 8 12.7 8 11.7Z"
-                        fill="currentColor" />
-                </svg>
-            </span>
-            <!--end::Svg Icon--> Prebuilts
-        </a>
-        <!--end::Prebuilts toggle-->
 
-
-        <!--begin::Get help-->
-        <a href="https://devs.keenthemes.com/" target="_blank" class="app-engage-btn hover-primary">
-            <!--begin::Svg Icon | path: icons/duotune/general/gen063.svg-->
-            <span class="svg-icon svg-icon-1 pt-1 mb-2"><svg width="22" height="23" viewBox="0 0 22 23"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                        d="M21.1721 9.90759L19.6663 8.3801C19.5613 8.27722 19.4783 8.15406 19.4225 8.0181C19.3666 7.88214 19.339 7.73623 19.3413 7.58926V5.4226C19.3399 5.12576 19.2798 4.83214 19.1646 4.55858C19.0494 4.28503 18.8812 4.03693 18.6698 3.82856C18.4584 3.62018 18.2079 3.45562 17.9327 3.34434C17.6576 3.23305 17.3631 3.17724 17.0663 3.1801H14.8996C14.7526 3.18241 14.6067 3.15479 14.4708 3.09892C14.3348 3.04304 14.2116 2.96009 14.1088 2.8551L12.5921 1.3276C12.1696 0.905532 11.5968 0.668457 10.9996 0.668457C10.4024 0.668457 9.82962 0.905532 9.40711 1.3276L7.87961 2.83343C7.77673 2.93842 7.65357 3.02138 7.51761 3.07725C7.38165 3.13312 7.23575 3.16074 7.08877 3.15843H4.92211C4.62528 3.15984 4.33165 3.21989 4.05809 3.33512C3.78454 3.45035 3.53645 3.6185 3.32807 3.82989C3.11969 4.04129 2.95513 4.29178 2.84385 4.56696C2.73257 4.84215 2.67675 5.13661 2.67961 5.43343V7.6001C2.68192 7.74707 2.6543 7.89297 2.59843 8.02893C2.54255 8.16489 2.4596 8.28805 2.35461 8.39093L0.827108 9.90759C0.405044 10.3301 0.167969 10.9029 0.167969 11.5001C0.167969 12.0973 0.405044 12.6701 0.827108 13.0926L2.33294 14.6201C2.43793 14.723 2.52089 14.8461 2.57676 14.9821C2.63263 15.118 2.66025 15.264 2.65794 15.4109V17.5776C2.65935 17.8744 2.7194 18.1681 2.83463 18.4416C2.94986 18.7152 3.11801 18.9633 3.32941 19.1716C3.5408 19.38 3.79129 19.5446 4.06647 19.6559C4.34166 19.7671 4.63612 19.823 4.93294 19.8201H7.09961C7.24658 19.8178 7.39249 19.8454 7.52844 19.9013C7.6644 19.9571 7.78757 20.0401 7.89044 20.1451L9.41794 21.6726C9.84045 22.0947 10.4132 22.3317 11.0104 22.3317C11.6076 22.3317 12.1804 22.0947 12.6029 21.6726L14.1196 20.1668C14.2225 20.0618 14.3456 19.9788 14.4816 19.9229C14.6176 19.8671 14.7635 19.8394 14.9104 19.8418H17.0771C17.6747 19.8418 18.2479 19.6044 18.6705 19.1818C19.093 18.7592 19.3304 18.1861 19.3304 17.5884V15.4218C19.3281 15.2748 19.3557 15.1289 19.4116 14.9929C19.4675 14.857 19.5504 14.7338 19.6554 14.6309L21.1829 13.1034C21.3928 12.8933 21.5591 12.6438 21.6723 12.3691C21.7854 12.0945 21.8431 11.8003 21.8421 11.5033C21.8411 11.2063 21.7814 10.9124 21.6664 10.6385C21.5514 10.3647 21.3834 10.1163 21.1721 9.90759Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                    <path
-                        d="M7.90276 8.65088H6.81943C6.36471 8.65088 5.99609 9.0195 5.99609 9.47421V15.0317C5.99609 15.4864 6.36471 15.855 6.81943 15.855H7.90276C8.35748 15.855 8.72609 15.4864 8.72609 15.0317V9.47421C8.72609 9.0195 8.35748 8.65088 7.90276 8.65088Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                    <path
-                        d="M8.69141 10.1459L10.7714 7.00425C10.9133 6.7749 11.1313 6.60279 11.3873 6.51808C11.6433 6.43338 11.921 6.44147 12.1717 6.54096C12.4223 6.64044 12.63 6.82497 12.7582 7.0622C12.8864 7.29942 12.9271 7.57422 12.8731 7.83842L12.6022 9.38759C12.5864 9.47635 12.5902 9.56749 12.6134 9.65462C12.6366 9.74175 12.6785 9.82275 12.7364 9.89193C12.7942 9.96111 12.8665 10.0168 12.9481 10.055C13.0297 10.0933 13.1187 10.1132 13.2089 10.1134H15.3322C15.4753 10.116 15.6159 10.1516 15.7431 10.2174C15.8702 10.2831 15.9805 10.3772 16.0653 10.4925C16.1502 10.6078 16.2074 10.741 16.2324 10.8819C16.2575 11.0229 16.2497 11.1676 16.2097 11.3051L14.8664 15.6926C14.7942 15.9256 14.651 16.1303 14.4567 16.2779C14.2625 16.4256 14.0269 16.5088 13.7831 16.5159H11.1072C10.7461 16.5132 10.3944 16.3997 10.0997 16.1909L8.73474 15.1076L8.69141 10.1459Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                </svg>
-            </span>
-            <!--end::Svg Icon--> Get Help
-        </a>
-        <!--end::Get help-->
-
-        <!--begin::Prebuilts toggle-->
-        <a href="https://1.envato.market/EA4JP" target="_blank" class="app-engage-btn hover-success">
-            <!--begin::Svg Icon | path: icons/duotune/general/gen064.svg-->
-            <span class="svg-icon svg-icon-2 pt-1 mb-2"><svg width="22" height="22" viewBox="0 0 22 22"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                        d="M19.5997 3.52344H2.39639C2.09618 3.53047 1.8003 3.59658 1.52565 3.718C1.25101 3.83941 1.00298 4.01375 0.79573 4.23106C0.588484 4.44837 0.426087 4.70438 0.317815 4.98447C0.209544 5.26456 0.157521 5.56324 0.164719 5.86344C0.157521 6.16364 0.209544 6.46232 0.317815 6.74241C0.426087 7.0225 0.588484 7.27851 0.79573 7.49581C1.00298 7.71312 1.25101 7.88746 1.52565 8.00888C1.8003 8.1303 2.09618 8.19641 2.39639 8.20344H19.5997C19.8999 8.19641 20.1958 8.1303 20.4704 8.00888C20.7451 7.88746 20.9931 7.71312 21.2004 7.49581C21.4076 7.27851 21.57 7.0225 21.6783 6.74241C21.7866 6.46232 21.8386 6.16364 21.8314 5.86344C21.8386 5.56324 21.7866 5.26456 21.6783 4.98447C21.57 4.70438 21.4076 4.44837 21.2004 4.23106C20.9931 4.01375 20.7451 3.83941 20.4704 3.718C20.1958 3.59658 19.8999 3.53047 19.5997 3.52344Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                    <path
-                        d="M2.39453 8.20361L4.01953 18.3111C4.15644 19.145 4.58173 19.9043 5.22121 20.4567C5.8607 21.009 6.6738 21.3194 7.5187 21.3336H14.5712C15.4215 21.3202 16.2395 21.006 16.8801 20.4468C17.5207 19.8875 17.9424 19.1193 18.0704 18.2786L19.5979 8.20361H2.39453ZM9.28453 16.3178C9.28453 16.5333 9.19893 16.7399 9.04656 16.8923C8.89418 17.0447 8.68752 17.1303 8.47203 17.1303C8.25654 17.1303 8.04988 17.0447 7.89751 16.8923C7.74513 16.7399 7.65953 16.5333 7.65953 16.3178V12.4069C7.65953 12.1915 7.74513 11.9848 7.89751 11.8324C8.04988 11.68 8.25654 11.5944 8.47203 11.5944C8.68752 11.5944 8.89418 11.68 9.04656 11.8324C9.19893 11.9848 9.28453 12.1915 9.28453 12.4069V16.3178ZM14.322 16.3178C14.322 16.5333 14.2364 16.7399 14.0841 16.8923C13.9317 17.0447 13.725 17.1303 13.5095 17.1303C13.294 17.1303 13.0874 17.0447 12.935 16.8923C12.7826 16.7399 12.697 16.5333 12.697 16.3178V12.4069C12.697 12.1915 12.7826 11.9848 12.935 11.8324C13.0874 11.68 13.294 11.5944 13.5095 11.5944C13.725 11.5944 13.9317 11.68 14.0841 11.8324C14.2364 11.9848 14.322 12.1915 14.322 12.4069V16.3178Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                    <path
-                        d="M17.3895 4.87755C17.2529 4.87776 17.1185 4.84303 16.999 4.77667C16.8796 4.71031 16.7791 4.61452 16.707 4.49839L14.5945 1.24839C14.488 1.07063 14.4544 0.858502 14.5009 0.656521C14.5473 0.45454 14.6702 0.2784 14.8437 0.165055C15.0215 0.0626479 15.2311 0.0303209 15.4315 0.0744071C15.6319 0.118493 15.8086 0.235816 15.927 0.403388L18.0395 3.70755C18.1434 3.88599 18.1755 4.09728 18.1292 4.2985C18.0829 4.49972 17.9618 4.67577 17.7904 4.79089C17.6659 4.85225 17.5282 4.88202 17.3895 4.87755Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                    <path
-                        d="M4.49988 4.8885C4.34679 4.8928 4.19591 4.85131 4.06655 4.76933C3.89514 4.65422 3.77399 4.47817 3.72771 4.27694C3.68143 4.07572 3.71349 3.86443 3.81738 3.686L5.98405 0.435999C6.09739 0.262485 6.27353 0.13961 6.47551 0.0931545C6.6775 0.0466989 6.88962 0.0802727 7.06738 0.186832C7.23676 0.303623 7.35627 0.479597 7.40239 0.680101C7.4485 0.880606 7.41788 1.09111 7.31655 1.27017L5.20405 4.52017C5.12881 4.63747 5.0243 4.73313 4.90082 4.79773C4.77733 4.86232 4.63914 4.8936 4.49988 4.8885Z"
-                        fill="currentColor" fill-opacity="0.8" />
-                </svg>
-            </span>
-            <!--end::Svg Icon--> Buy Now
-        </a>
-        <!--end::Prebuilts toggle-->
-
-        <!--begin::Engage close-->
-        <a href="#" id="kt_app_engage_toggle_off"
-            class="app-engage-btn app-engage-btn-toggle-off text-hover-primary p-0">
-            <!--begin::Svg Icon | path: icons/duotune/arrows/arr097.svg-->
-            <span class="svg-icon svg-icon-2x"><svg width="32" height="32" viewBox="0 0 32 32"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="9.39844" y="20.7144" width="16" height="2.66667" rx="1.33333"
-                        transform="rotate(-45 9.39844 20.7144)" fill="currentColor" />
-                    <rect x="11.2852" y="9.40039" width="16" height="2.66667" rx="1.33333"
-                        transform="rotate(45 11.2852 9.40039)" fill="currentColor" />
-                </svg>
-            </span>
-            <!--end::Svg Icon-->
-        </a>
-        <!--end::Engage close-->
-
-        <!--begin::Engage close-->
-        <a href="#" id="kt_app_engage_toggle_on"
-            class="app-engage-btn app-engage-btn-toggle-on text-hover-primary p-0" data-bs-toggle="tooltip"
-            data-bs-placement="left" data-bs-custom-class="tooltip-inverse" data-bs-dimiss="click"
-            title="Explore Metronic">
-            <!--begin::Svg Icon | path: icons/duotune/general/gen065.svg-->
-            <span class="svg-icon svg-icon-2 text-primary"><svg width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                        d="M22.9558 10.2848L21.3341 8.6398C21.221 8.52901 21.1317 8.39637 21.0715 8.24996C21.0114 8.10354 20.9816 7.94641 20.9841 7.78814V5.4548C20.9826 5.13514 20.9179 4.81893 20.7938 4.52433C20.6697 4.22973 20.4887 3.96255 20.261 3.73814C20.0333 3.51374 19.7636 3.33652 19.4672 3.21668C19.1709 3.09684 18.8538 3.03673 18.5341 3.0398H16.2008C16.0425 3.04229 15.8854 3.01255 15.739 2.95238C15.5925 2.89221 15.4599 2.80287 15.3491 2.6898L13.7158 1.0448C13.2608 0.590273 12.6439 0.334961 12.0008 0.334961C11.3576 0.334961 10.7408 0.590273 10.2858 1.0448L8.64078 2.66647C8.52999 2.77954 8.39735 2.86887 8.25094 2.92904C8.10452 2.98922 7.94739 3.01896 7.78911 3.01647H5.45578C5.13612 3.01799 4.8199 3.08266 4.5253 3.20675C4.23071 3.33085 3.96353 3.51193 3.73912 3.73959C3.51471 3.96724 3.3375 4.237 3.21766 4.53335C3.09781 4.82971 3.0377 5.14682 3.04078 5.46647V7.7998C3.04327 7.95808 3.01353 8.11521 2.95335 8.26163C2.89318 8.40804 2.80385 8.54068 2.69078 8.65147L1.04578 10.2848C0.591249 10.7398 0.335938 11.3567 0.335938 11.9998C0.335938 12.6429 0.591249 13.2598 1.04578 13.7148L2.66745 15.3598C2.78051 15.4706 2.86985 15.6032 2.93002 15.7496C2.99019 15.8961 3.01994 16.0532 3.01745 16.2115V18.5448C3.01897 18.8645 3.08363 19.1807 3.20773 19.4753C3.33182 19.7699 3.5129 20.0371 3.74056 20.2615C3.96822 20.4859 4.23798 20.6631 4.53433 20.7829C4.83068 20.9028 5.14779 20.9629 5.46745 20.9598H7.80078C7.95906 20.9573 8.11619 20.9871 8.2626 21.0472C8.40902 21.1074 8.54166 21.1967 8.65245 21.3098L10.2974 22.9548C10.7525 23.4093 11.3693 23.6646 12.0124 23.6646C12.6556 23.6646 13.2724 23.4093 13.7274 22.9548L15.3608 21.3331C15.4716 21.2201 15.6042 21.1307 15.7506 21.0706C15.897 21.0104 16.0542 20.9806 16.2124 20.9831H18.5458C19.1894 20.9831 19.8066 20.7275 20.2617 20.2724C20.7168 19.8173 20.9724 19.2001 20.9724 18.5565V16.2231C20.97 16.0649 20.9997 15.9077 21.0599 15.7613C21.12 15.6149 21.2094 15.4823 21.3224 15.3715L22.9674 13.7265C23.1935 13.5002 23.3726 13.2314 23.4944 12.9357C23.6162 12.64 23.6784 12.3231 23.6773 12.0032C23.6762 11.6834 23.6119 11.3669 23.4881 11.072C23.3643 10.7771 23.1834 10.5095 22.9558 10.2848Z"
-                        fill="currentColor" />
-                    <path
-                        d="M12.0039 15.4998C11.7012 15.4998 11.4109 15.38 11.1969 15.1668C10.9829 14.9535 10.8626 14.6643 10.8626 14.3627V13.9382C10.8467 13.2884 10.9994 12.6456 11.306 12.0718C11.6126 11.4981 12.0627 11.013 12.6126 10.6634C12.7969 10.561 12.9505 10.4114 13.0575 10.2302C13.1645 10.049 13.221 9.84266 13.2213 9.63242C13.2213 9.31073 13.0931 9.00223 12.8648 8.77476C12.6365 8.5473 12.3268 8.41951 12.0039 8.41951C11.6811 8.41951 11.3714 8.5473 11.1431 8.77476C10.9148 9.00223 10.7865 9.31073 10.7865 9.63242C10.7865 9.93399 10.6663 10.2232 10.4523 10.4365C10.2382 10.6497 9.94792 10.7695 9.64522 10.7695C9.34253 10.7695 9.05223 10.6497 8.83819 10.4365C8.62415 10.2232 8.50391 9.93399 8.50391 9.63242C8.50763 9.02196 8.67214 8.42317 8.98099 7.89592C9.28984 7.36868 9.7322 6.93145 10.2639 6.62796C10.7955 6.32447 11.3978 6.16535 12.0105 6.16651C12.6233 6.16767 13.225 6.32908 13.7554 6.63458C14.2859 6.94009 14.7266 7.37899 15.0335 7.9074C15.3403 8.43582 15.5025 9.03522 15.5039 9.64569C15.5053 10.2562 15.3458 10.8563 15.0414 11.3861C14.7369 11.9159 14.2983 12.3568 13.7692 12.6647C13.5645 12.8132 13.4003 13.0101 13.2913 13.2378C13.1824 13.4655 13.1322 13.7167 13.1453 13.9685V14.3931C13.1373 14.6894 13.0136 14.9708 12.8004 15.1776C12.5872 15.3843 12.3014 15.4999 12.0039 15.4998Z"
-                        fill="currentColor" />
-                    <path
-                        d="M12.0026 18.9998C12.6469 18.9998 13.1693 18.4775 13.1693 17.8332C13.1693 17.1888 12.6469 16.6665 12.0026 16.6665C11.3583 16.6665 10.8359 17.1888 10.8359 17.8332C10.8359 18.4775 11.3583 18.9998 12.0026 18.9998Z"
-                        fill="currentColor" />
-                </svg>
-            </span>
-            <!--end::Svg Icon-->
-        </a>
-        <!--end::Engage close-->
-    </div>
     <!--end::Engage-->
 
     <!--begin::Engage modals-->
@@ -9314,886 +9386,7 @@
                         <!--end::Nav-->
 
                         <!--begin::Form-->
-                        <form class="mx-auto w-100 mw-600px pt-15 pb-10" novalidate="novalidate"
-                            id="kt_modal_create_campaign_stepper_form">
 
-                            <!--begin::Step 1-->
-                            <div class="current" data-kt-stepper-element="content">
-                                <!--begin::Wrapper-->
-                                <div class="w-100">
-                                    <!--begin::Heading-->
-                                    <div class="pb-10 pb-lg-15">
-                                        <!--begin::Title-->
-                                        <h2 class="fw-bold d-flex align-items-center text-dark">
-                                            Setup Campaign Details
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="Campaign name will be used as reference within your campaign reports"></i>
-                                        </h2>
-                                        <!--end::Title-->
-
-                                        <!--begin::Notice-->
-                                        <div class="text-muted fw-semibold fs-6">
-                                            If you need more info, please check out
-                                            <a href="#" class="link-primary fw-bold">Help Page</a>.
-                                        </div>
-                                        <!--end::Notice-->
-                                    </div>
-                                    <!--end::Heading-->
-
-                                    <!--begin::Input group-->
-                                    <div class="mb-10 fv-row">
-                                        <!--begin::Label-->
-                                        <label class="required form-label mb-3">Campaign Name</label>
-                                        <!--end::Label-->
-
-                                        <!--begin::Input-->
-                                        <input type="text"
-                                            class="form-control form-control-lg form-control-solid"
-                                            name="campaign_name" placeholder="" value="" />
-                                        <!--end::Input-->
-                                    </div>
-                                    <!--end::Input group-->
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Label-->
-                                        <label class="d-block fw-semibold fs-6 mb-5">
-                                            <span class="required">Company Logo</span>
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="E.g. Select a logo to represent the company that's running the campaign."></i>
-                                        </label>
-                                        <!--end::Label-->
-
-                                        <!--begin::Image input placeholder-->
-                                        <style>
-                                            .image-input-placeholder {
-                                                background-image: url('../../../assets/media/svg/files/blank-image.svg');
-                                            }
-
-                                            [data-bs-theme="dark"] .image-input-placeholder {
-                                                background-image: url('../../../assets/media/svg/files/blank-image-dark.svg');
-                                            }
-                                        </style>
-                                        <!--end::Image input placeholder-->
-
-                                        <!--begin::Image input-->
-                                        <div class="image-input image-input-empty image-input-outline image-input-placeholder"
-                                            data-kt-image-input="true">
-                                            <!--begin::Preview existing avatar-->
-                                            <div class="image-input-wrapper w-125px h-125px"></div>
-                                            <!--end::Preview existing avatar-->
-
-                                            <!--begin::Label-->
-                                            <label
-                                                class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                                data-kt-image-input-action="change" data-bs-toggle="tooltip"
-                                                title="Change avatar">
-                                                <i class="bi bi-pencil-fill fs-7"></i>
-
-                                                <!--begin::Inputs-->
-                                                <input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
-                                                <input type="hidden" name="avatar_remove" />
-                                                <!--end::Inputs-->
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <!--begin::Cancel-->
-                                            <span
-                                                class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                                data-kt-image-input-action="cancel" data-bs-toggle="tooltip"
-                                                title="Cancel avatar">
-                                                <i class="bi bi-x fs-2"></i>
-                                            </span>
-                                            <!--end::Cancel-->
-
-                                            <!--begin::Remove-->
-                                            <span
-                                                class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                                data-kt-image-input-action="remove" data-bs-toggle="tooltip"
-                                                title="Remove avatar">
-                                                <i class="bi bi-x fs-2"></i>
-                                            </span>
-                                            <!--end::Remove-->
-                                        </div>
-                                        <!--end::Image input-->
-
-                                        <!--begin::Hint-->
-                                        <div class="form-text">Allowed file types: png, jpg, jpeg.</div>
-                                        <!--end::Hint-->
-                                    </div>
-                                    <!--end::Input group-->
-
-                                    <!--begin::Input group-->
-                                    <div class="mb-10">
-                                        <!--begin::Label-->
-                                        <label class="required fw-semibold fs-6 mb-5">Campaign Goal</label>
-                                        <!--end::Label-->
-
-                                        <!--begin::Roles-->
-                                        <!--begin::Input row-->
-                                        <div class="d-flex fv-row">
-                                            <!--begin::Radio-->
-                                            <div class="form-check form-check-custom form-check-solid">
-                                                <!--begin::Input-->
-                                                <input class="form-check-input me-3" name="user_role"
-                                                    type="radio" value="0"
-                                                    id="kt_modal_update_role_option_0" checked='checked' />
-                                                <!--end::Input-->
-
-                                                <!--begin::Label-->
-                                                <label class="form-check-label" for="kt_modal_update_role_option_0">
-                                                    <div class="fw-bold text-gray-800">Get more visitors</div>
-                                                    <div class="text-gray-600">Increase impression traffic onto the
-                                                        platform</div>
-                                                </label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!--end::Radio-->
-                                        </div>
-                                        <!--end::Input row-->
-
-                                        <div class='separator separator-dashed my-5'></div>
-                                        <!--begin::Input row-->
-                                        <div class="d-flex fv-row">
-                                            <!--begin::Radio-->
-                                            <div class="form-check form-check-custom form-check-solid">
-                                                <!--begin::Input-->
-                                                <input class="form-check-input me-3" name="user_role"
-                                                    type="radio" value="1"
-                                                    id="kt_modal_update_role_option_1" />
-                                                <!--end::Input-->
-
-                                                <!--begin::Label-->
-                                                <label class="form-check-label" for="kt_modal_update_role_option_1">
-                                                    <div class="fw-bold text-gray-800">Get more messages on chat</div>
-                                                    <div class="text-gray-600">Increase community interaction and
-                                                        communication</div>
-                                                </label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!--end::Radio-->
-                                        </div>
-                                        <!--end::Input row-->
-
-                                        <div class='separator separator-dashed my-5'></div>
-                                        <!--begin::Input row-->
-                                        <div class="d-flex fv-row">
-                                            <!--begin::Radio-->
-                                            <div class="form-check form-check-custom form-check-solid">
-                                                <!--begin::Input-->
-                                                <input class="form-check-input me-3" name="user_role"
-                                                    type="radio" value="2"
-                                                    id="kt_modal_update_role_option_2" />
-                                                <!--end::Input-->
-
-                                                <!--begin::Label-->
-                                                <label class="form-check-label" for="kt_modal_update_role_option_2">
-                                                    <div class="fw-bold text-gray-800">Get more calls</div>
-                                                    <div class="text-gray-600">Boost telecommunication feedback to
-                                                        provide precise and accurate information</div>
-                                                </label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!--end::Radio-->
-                                        </div>
-                                        <!--end::Input row-->
-
-                                        <div class='separator separator-dashed my-5'></div>
-                                        <!--begin::Input row-->
-                                        <div class="d-flex fv-row">
-                                            <!--begin::Radio-->
-                                            <div class="form-check form-check-custom form-check-solid">
-                                                <!--begin::Input-->
-                                                <input class="form-check-input me-3" name="user_role"
-                                                    type="radio" value="3"
-                                                    id="kt_modal_update_role_option_3" />
-                                                <!--end::Input-->
-
-                                                <!--begin::Label-->
-                                                <label class="form-check-label" for="kt_modal_update_role_option_3">
-                                                    <div class="fw-bold text-gray-800">Get more likes</div>
-                                                    <div class="text-gray-600">Increase positive interactivity on
-                                                        social media platforms</div>
-                                                </label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!--end::Radio-->
-                                        </div>
-                                        <!--end::Input row-->
-
-                                        <div class='separator separator-dashed my-5'></div>
-                                        <!--begin::Input row-->
-                                        <div class="d-flex fv-row">
-                                            <!--begin::Radio-->
-                                            <div class="form-check form-check-custom form-check-solid">
-                                                <!--begin::Input-->
-                                                <input class="form-check-input me-3" name="user_role"
-                                                    type="radio" value="4"
-                                                    id="kt_modal_update_role_option_4" />
-                                                <!--end::Input-->
-
-                                                <!--begin::Label-->
-                                                <label class="form-check-label" for="kt_modal_update_role_option_4">
-                                                    <div class="fw-bold text-gray-800">Lead generation</div>
-                                                    <div class="text-gray-600">Collect contact information for
-                                                        potential customers</div>
-                                                </label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!--end::Radio-->
-                                        </div>
-                                        <!--end::Input row-->
-
-                                        <!--end::Roles-->
-                                    </div>
-                                    <!--end::Input group-->
-                                </div>
-                                <!--end::Wrapper-->
-                            </div>
-                            <!--end::Step 1-->
-
-                            <!--begin::Step 2-->
-                            <div data-kt-stepper-element="content">
-                                <!--begin::Wrapper-->
-                                <div class="w-100">
-                                    <!--begin::Heading-->
-                                    <div class="pb-10 pb-lg-12">
-                                        <!--begin::Title-->
-                                        <h1 class="fw-bold text-dark">Upload Files</h1>
-                                        <!--end::Title-->
-
-                                        <!--begin::Description-->
-                                        <div class="text-muted fw-semibold fs-4">
-                                            If you need more info, please check
-                                            <a href="#" class="link-primary">Campaign Guidelines</a>
-                                        </div>
-                                        <!--end::Description-->
-                                    </div>
-                                    <!--end::Heading-->
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Dropzone-->
-                                        <div class="dropzone" id="kt_modal_create_campaign_files_upload">
-                                            <!--begin::Message-->
-                                            <div class="dz-message needsclick">
-                                                <!--begin::Icon-->
-                                                <!--begin::Svg Icon | path: icons/duotune/files/fil010.svg-->
-                                                <span class="svg-icon svg-icon-3hx svg-icon-primary"><svg
-                                                        width="24" height="24" viewBox="0 0 24 24"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path opacity="0.3"
-                                                            d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM14.5 12L12.7 9.3C12.3 8.9 11.7 8.9 11.3 9.3L10 12H11.5V17C11.5 17.6 11.4 18 12 18C12.6 18 12.5 17.6 12.5 17V12H14.5Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M13 11.5V17.9355C13 18.2742 12.6 19 12 19C11.4 19 11 18.2742 11 17.9355V11.5H13Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M8.2575 11.4411C7.82942 11.8015 8.08434 12.5 8.64398 12.5H15.356C15.9157 12.5 16.1706 11.8015 15.7425 11.4411L12.4375 8.65789C12.1875 8.44737 11.8125 8.44737 11.5625 8.65789L8.2575 11.4411Z"
-                                                            fill="currentColor" />
-                                                        <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                </span>
-                                                <!--end::Svg Icon-->
-                                                <!--end::Icon-->
-
-                                                <!--begin::Info-->
-                                                <div class="ms-4">
-                                                    <h3 class="dfs-3 fw-bold text-gray-900 mb-1">Drop campaign files
-                                                        here or click to upload.</h3>
-                                                    <span class="fw-semibold fs-4 text-muted">Upload up to 10
-                                                        files</span>
-                                                </div>
-                                                <!--end::Info-->
-                                            </div>
-                                        </div>
-                                        <!--end::Dropzone-->
-                                    </div>
-                                    <!--end::Input group-->
-
-                                    <!--begin::Input group-->
-                                    <div class="mb-10">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-semibold mb-2">Uploaded File</label>
-                                        <!--End::Label-->
-
-                                        <!--begin::Files-->
-                                        <div class="mh-300px scroll-y me-n7 pe-7">
-                                            <!--begin::File-->
-                                            <div
-                                                class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
-                                                <div class="d-flex align-items-center">
-                                                    <!--begin::Avatar-->
-                                                    <div class="symbol symbol-35px">
-                                                        <img src="../../../assets/media/svg/files/pdf.svg"
-                                                            alt="icon" />
-                                                    </div>
-                                                    <!--end::Avatar-->
-
-                                                    <!--begin::Details-->
-                                                    <div class="ms-6">
-                                                        <a href="#"
-                                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Product
-                                                            Specifications</a>
-                                                        <div class="fw-semibold text-muted">230kb</div>
-                                                    </div>
-                                                    <!--end::Details-->
-                                                </div>
-
-                                                <!--begin::Menu-->
-                                                <div class="min-w-100px">
-                                                    <select class="form-select form-select-solid form-select-sm"
-                                                        data-control="select2" data-hide-search="true"
-                                                        data-placeholder="Edit">
-                                                        <option></option>
-                                                        <option value="1">Remove</option>
-                                                        <option value="2">Modify</option>
-                                                        <option value="3">Select</option>
-                                                    </select>
-                                                </div>
-                                                <!--end::Menu-->
-                                            </div>
-                                            <!--end::File-->
-                                            <!--begin::File-->
-                                            <div
-                                                class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
-                                                <div class="d-flex align-items-center">
-                                                    <!--begin::Avatar-->
-                                                    <div class="symbol symbol-35px">
-                                                        <img src="../../../assets/media/svg/files/tif.svg"
-                                                            alt="icon" />
-                                                    </div>
-                                                    <!--end::Avatar-->
-
-                                                    <!--begin::Details-->
-                                                    <div class="ms-6">
-                                                        <a href="#"
-                                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Campaign
-                                                            Creative Poster</a>
-                                                        <div class="fw-semibold text-muted">2.4mb</div>
-                                                    </div>
-                                                    <!--end::Details-->
-                                                </div>
-
-                                                <!--begin::Menu-->
-                                                <div class="min-w-100px">
-                                                    <select class="form-select form-select-solid form-select-sm"
-                                                        data-control="select2" data-hide-search="true"
-                                                        data-placeholder="Edit">
-                                                        <option></option>
-                                                        <option value="1">Remove</option>
-                                                        <option value="2">Modify</option>
-                                                        <option value="3">Select</option>
-                                                    </select>
-                                                </div>
-                                                <!--end::Menu-->
-                                            </div>
-                                            <!--end::File-->
-                                            <!--begin::File-->
-                                            <div
-                                                class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
-                                                <div class="d-flex align-items-center">
-                                                    <!--begin::Avatar-->
-                                                    <div class="symbol symbol-35px">
-                                                        <img src="../../../assets/media/svg/files/folder-document.svg"
-                                                            alt="icon" />
-                                                    </div>
-                                                    <!--end::Avatar-->
-
-                                                    <!--begin::Details-->
-                                                    <div class="ms-6">
-                                                        <a href="#"
-                                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Campaign
-                                                            Landing Page Source</a>
-                                                        <div class="fw-semibold text-muted">1.12mb</div>
-                                                    </div>
-                                                    <!--end::Details-->
-                                                </div>
-
-                                                <!--begin::Menu-->
-                                                <div class="min-w-100px">
-                                                    <select class="form-select form-select-solid form-select-sm"
-                                                        data-control="select2" data-hide-search="true"
-                                                        data-placeholder="Edit">
-                                                        <option></option>
-                                                        <option value="1">Remove</option>
-                                                        <option value="2">Modify</option>
-                                                        <option value="3">Select</option>
-                                                    </select>
-                                                </div>
-                                                <!--end::Menu-->
-                                            </div>
-                                            <!--end::File-->
-                                            <!--begin::File-->
-                                            <div
-                                                class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
-                                                <div class="d-flex align-items-center">
-                                                    <!--begin::Avatar-->
-                                                    <div class="symbol symbol-35px">
-                                                        <img src="../../../assets/media/svg/files/css.svg"
-                                                            alt="icon" />
-                                                    </div>
-                                                    <!--end::Avatar-->
-
-                                                    <!--begin::Details-->
-                                                    <div class="ms-6">
-                                                        <a href="#"
-                                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Landing
-                                                            Page Styling</a>
-                                                        <div class="fw-semibold text-muted">85kb</div>
-                                                    </div>
-                                                    <!--end::Details-->
-                                                </div>
-
-                                                <!--begin::Menu-->
-                                                <div class="min-w-100px">
-                                                    <select class="form-select form-select-solid form-select-sm"
-                                                        data-control="select2" data-hide-search="true"
-                                                        data-placeholder="Edit">
-                                                        <option></option>
-                                                        <option value="1">Remove</option>
-                                                        <option value="2">Modify</option>
-                                                        <option value="3">Select</option>
-                                                    </select>
-                                                </div>
-                                                <!--end::Menu-->
-                                            </div>
-                                            <!--end::File-->
-                                            <!--begin::File-->
-                                            <div
-                                                class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
-                                                <div class="d-flex align-items-center">
-                                                    <!--begin::Avatar-->
-                                                    <div class="symbol symbol-35px">
-                                                        <img src="../../../assets/media/svg/files/ai.svg"
-                                                            alt="icon" />
-                                                    </div>
-                                                    <!--end::Avatar-->
-
-                                                    <!--begin::Details-->
-                                                    <div class="ms-6">
-                                                        <a href="#"
-                                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Design
-                                                            Source Files</a>
-                                                        <div class="fw-semibold text-muted">48mb</div>
-                                                    </div>
-                                                    <!--end::Details-->
-                                                </div>
-
-                                                <!--begin::Menu-->
-                                                <div class="min-w-100px">
-                                                    <select class="form-select form-select-solid form-select-sm"
-                                                        data-control="select2" data-hide-search="true"
-                                                        data-placeholder="Edit">
-                                                        <option></option>
-                                                        <option value="1">Remove</option>
-                                                        <option value="2">Modify</option>
-                                                        <option value="3">Select</option>
-                                                    </select>
-                                                </div>
-                                                <!--end::Menu-->
-                                            </div>
-                                            <!--end::File-->
-                                            <!--begin::File-->
-                                            <div class="d-flex flex-stack py-4 ">
-                                                <div class="d-flex align-items-center">
-                                                    <!--begin::Avatar-->
-                                                    <div class="symbol symbol-35px">
-                                                        <img src="../../../assets/media/svg/files/doc.svg"
-                                                            alt="icon" />
-                                                    </div>
-                                                    <!--end::Avatar-->
-
-                                                    <!--begin::Details-->
-                                                    <div class="ms-6">
-                                                        <a href="#"
-                                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Campaign
-                                                            Plan Document</a>
-                                                        <div class="fw-semibold text-muted">27kb</div>
-                                                    </div>
-                                                    <!--end::Details-->
-                                                </div>
-
-                                                <!--begin::Menu-->
-                                                <div class="min-w-100px">
-                                                    <select class="form-select form-select-solid form-select-sm"
-                                                        data-control="select2" data-hide-search="true"
-                                                        data-placeholder="Edit">
-                                                        <option></option>
-                                                        <option value="1">Remove</option>
-                                                        <option value="2">Modify</option>
-                                                        <option value="3">Select</option>
-                                                    </select>
-                                                </div>
-                                                <!--end::Menu-->
-                                            </div>
-                                            <!--end::File-->
-                                        </div>
-                                        <!--end::Files-->
-                                    </div>
-                                    <!--end::Input group-->
-                                </div>
-                                <!--end::Wrapper-->
-                            </div>
-                            <!--end::Step 2-->
-                            <!--begin::Step 3-->
-                            <div data-kt-stepper-element="content">
-                                <!--begin::Wrapper-->
-                                <div class="w-100">
-                                    <!--begin::Heading-->
-                                    <div class="pb-10 pb-lg-12">
-                                        <!--begin::Title-->
-                                        <h1 class="fw-bold text-dark">Configure Audiences</h1>
-                                        <!--end::Title-->
-
-                                        <!--begin::Description-->
-                                        <div class="text-muted fw-semibold fs-4">
-                                            If you need more info, please check
-                                            <a href="#" class="link-primary">Campaign Guidelines</a>
-                                        </div>
-                                        <!--end::Description-->
-                                    </div>
-                                    <!--end::Heading-->
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-semibold mb-2">
-                                            Gender
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="Show your ads to either men or women, or select 'All' for both"></i>
-                                        </label>
-                                        <!--End::Label-->
-
-                                        <!--begin::Row-->
-                                        <div class="row g-9" data-kt-buttons="true"
-                                            data-kt-buttons-target="[data-kt-button='true']">
-                                            <!--begin::Col-->
-                                            <div class="col">
-                                                <!--begin::Option-->
-                                                <label
-                                                    class="btn btn-outline btn-outline-dashed btn-active-light-primary active d-flex text-start p-6"
-                                                    data-kt-button="true">
-                                                    <!--begin::Radio-->
-                                                    <span
-                                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="campaign_gender" value="1"
-                                                            checked="checked" />
-                                                    </span>
-                                                    <!--end::Radio-->
-
-                                                    <!--begin::Info-->
-                                                    <span class="ms-5">
-                                                        <span class="fs-4 fw-bold text-gray-800 d-block">All</span>
-                                                    </span>
-                                                    <!--end::Info-->
-                                                </label>
-                                                <!--end::Option-->
-                                            </div>
-                                            <!--end::Col-->
-
-                                            <!--begin::Col-->
-                                            <div class="col">
-                                                <!--begin::Option-->
-                                                <label
-                                                    class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6"
-                                                    data-kt-button="true">
-                                                    <!--begin::Radio-->
-                                                    <span
-                                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="campaign_gender" value="2" />
-                                                    </span>
-                                                    <!--end::Radio-->
-
-                                                    <!--begin::Info-->
-                                                    <span class="ms-5">
-                                                        <span class="fs-4 fw-bold text-gray-800 d-block">Male</span>
-                                                    </span>
-                                                    <!--end::Info-->
-                                                </label>
-                                                <!--end::Option-->
-                                            </div>
-                                            <!--end::Col-->
-
-                                            <!--begin::Col-->
-                                            <div class="col">
-                                                <!--begin::Option-->
-                                                <label
-                                                    class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6"
-                                                    data-kt-button="true">
-                                                    <!--begin::Radio-->
-                                                    <span
-                                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="campaign_gender" value="3" />
-                                                    </span>
-                                                    <!--end::Radio-->
-
-                                                    <!--begin::Info-->
-                                                    <span class="ms-5">
-                                                        <span class="fs-4 fw-bold text-gray-800 d-block">Female</span>
-                                                    </span>
-                                                    <!--end::Info-->
-                                                </label>
-                                                <!--end::Option-->
-                                            </div>
-                                            <!--end::Col-->
-                                        </div>
-                                        <!--end::Row-->
-                                    </div>
-                                    <!--end::Input group-->
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-semibold mb-2">
-                                            Age
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="Select the minimum and maximum age of the people who will find your ad relevant."></i>
-                                        </label>
-                                        <!--End::Label-->
-
-                                        <!--begin::Slider-->
-                                        <div class="d-flex flex-stack">
-                                            <div id="kt_modal_create_campaign_age_min"
-                                                class="fs-7 fw-semibold text-muted"></div>
-                                            <div id="kt_modal_create_campaign_age_slider"
-                                                class="noUi-sm w-100 ms-5 me-8"></div>
-                                            <div id="kt_modal_create_campaign_age_max"
-                                                class="fs-7 fw-semibold text-muted"></div>
-                                        </div>
-                                        <!--end::Slider-->
-                                    </div>
-                                    <!--end::Input group-->
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-semibold mb-2">
-                                            Location
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="Enter one or more location points for more specific targeting."></i>
-                                        </label>
-                                        <!--End::Label-->
-
-                                        <!--begin::Tagify-->
-                                        <input class="form-control d-flex align-items-center" value=""
-                                            id="kt_modal_create_campaign_location"
-                                            data-kt-flags-path="/metronic8/demo20/assets/media/flags/" />
-                                        <!--end::Tagify-->
-                                    </div>
-                                    <!--end::Input group-->
-
-                                </div>
-                                <!--end::Wrapper-->
-                            </div>
-                            <!--end::Step 3-->
-                            <!--begin::Step 4-->
-                            <div data-kt-stepper-element="content">
-                                <!--begin::Wrapper-->
-                                <div class="w-100">
-                                    <!--begin::Heading-->
-                                    <div class="pb-10 pb-lg-12">
-                                        <!--begin::Title-->
-                                        <h1 class="fw-bold text-dark">Budget Estimates</h1>
-                                        <!--end::Title-->
-
-                                        <!--begin::Description-->
-                                        <div class="text-muted fw-semibold fs-4">
-                                            If you need more info, please check
-                                            <a href="#" class="link-primary">Campaign Guidelines</a>
-                                        </div>
-                                        <!--end::Description-->
-                                    </div>
-                                    <!--end::Heading-->
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-semibold mb-2">
-                                            Campaign Duration
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="Choose how long you want your ad to run for"></i>
-                                        </label>
-                                        <!--end::Label-->
-
-                                        <!--begin::Duration option-->
-                                        <div class="d-flex gap-9 mb-7">
-                                            <!--begin::Button-->
-                                            <button type="button"
-                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary active"
-                                                id="kt_modal_create_campaign_duration_all">
-                                                Continuous duration<br />
-                                                <span class="fs-7">Your ad will run continuously for a daily
-                                                    budget.</span>
-                                            </button>
-                                            <!--end::Button-->
-
-                                            <!--begin::Button-->
-                                            <button type="button"
-                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary btn-outline-default"
-                                                id="kt_modal_create_campaign_duration_fixed">
-                                                Fixed duration<br />
-                                                <span class="fs-7">Your ad will run on the specified dates
-                                                    only.</span>
-                                            </button>
-                                            <!--end::Button-->
-                                        </div>
-                                        <!--end::Duration option-->
-
-                                        <!--begin::Datepicker-->
-                                        <input class="form-control form-control-solid d-none"
-                                            placeholder="Pick date & time"
-                                            id="kt_modal_create_campaign_datepicker" />
-                                        <!--end::Datepicker-->
-                                    </div>
-                                    <!--end::Input group-->
-
-
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-10">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-semibold mb-2">
-                                            Daily Budget
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                title="Choose the budget allocated for each day. Higher budget will generate better results"></i>
-                                        </label>
-                                        <!--end::Label-->
-
-                                        <!--begin::Slider-->
-                                        <div class="d-flex flex-column text-center">
-                                            <div class="d-flex align-items-start justify-content-center mb-7">
-                                                <span class="fw-bold fs-4 mt-1 me-2">$</span>
-                                                <span class="fw-bold fs-3x"
-                                                    id="kt_modal_create_campaign_budget_label"></span>
-                                                <span class="fw-bold fs-3x">.00</span>
-                                            </div>
-                                            <div id="kt_modal_create_campaign_budget_slider" class="noUi-sm"></div>
-                                        </div>
-                                        <!--end::Slider-->
-
-                                    </div>
-                                    <!--end::Input group-->
-                                </div>
-                                <!--end::Wrapper-->
-                            </div>
-                            <!--end::Step 4-->
-                            <!--begin::Step 5-->
-                            <div data-kt-stepper-element="content">
-                                <!--begin::Wrapper-->
-                                <div class="w-100">
-                                    <!--begin::Heading-->
-                                    <div class="pb-12 text-center">
-                                        <!--begin::Title-->
-                                        <h1 class="fw-bold text-dark">Campaign Created!</h1>
-                                        <!--end::Title-->
-
-                                        <!--begin::Description-->
-                                        <div class="fw-semibold text-muted fs-4">
-                                            You will receive an email with with the summary of your newly created
-                                            campaign!
-                                        </div>
-                                        <!--end::Description-->
-                                    </div>
-                                    <!--end::Heading-->
-
-                                    <!--begin::Actions-->
-                                    <div class="d-flex flex-center pb-20">
-                                        <button id="kt_modal_create_campaign_create_new" type="button"
-                                            class="btn btn-lg btn-light me-3" data-kt-element="complete-start">
-                                            Create New Campaign
-                                        </button>
-
-                                        <a href="#" class="btn btn-lg btn-primary" data-bs-toggle="tooltip"
-                                            title="Coming Soon">
-                                            View Campaign
-                                        </a>
-                                    </div>
-                                    <!--end::Actions-->
-
-                                    <!--begin::Illustration-->
-                                    <div class="text-center px-4">
-                                        <img src="../../../assets/media/illustrations/sketchy-1/9.png"
-                                            alt="" class="mww-100 mh-350px" />
-                                    </div>
-                                    <!--end::Illustration-->
-                                </div>
-                            </div>
-                            <!--end::Step 5-->
-                            <!--begin::Actions-->
-                            <div class="d-flex flex-stack pt-10">
-                                <!--begin::Wrapper-->
-                                <div class="me-2">
-                                    <button type="button" class="btn btn-lg btn-light-primary me-3"
-                                        data-kt-stepper-action="previous">
-                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr063.svg-->
-                                        <span class="svg-icon svg-icon-3 me-1"><svg width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x="6" y="11"
-                                                    width="13" height="2" rx="1"
-                                                    fill="currentColor" />
-                                                <path
-                                                    d="M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon--> Back
-                                    </button>
-                                </div>
-                                <!--end::Wrapper-->
-
-                                <!--begin::Wrapper-->
-                                <div>
-                                    <button type="button" class="btn btn-lg btn-primary"
-                                        data-kt-stepper-action="submit">
-                                        <span class="indicator-label">
-                                            Submit
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-3 ms-2 me-0"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13"
-                                                        width="13" height="2" rx="1"
-                                                        transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path
-                                                        d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                        <span class="indicator-progress">
-                                            Please wait... <span
-                                                class="spinner-border spinner-border-sm align-middle ms-2"></span>
-                                        </span>
-                                    </button>
-
-                                    <button type="button" class="btn btn-lg btn-primary"
-                                        data-kt-stepper-action="next">
-                                        Continue
-                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                        <span class="svg-icon svg-icon-3 ms-1 me-0"><svg width="24"
-                                                height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x="18" y="13"
-                                                    width="13" height="2" rx="1"
-                                                    transform="rotate(-180 18 13)" fill="currentColor" />
-                                                <path
-                                                    d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                    </button>
-                                </div>
-                                <!--end::Wrapper-->
-                            </div>
-                            <!--end::Actions-->
-                        </form>
                         <!--end::Form-->
                     </div>
                     <!--end::Stepper-->
@@ -10203,949 +9396,6 @@
         </div>
     </div>
     <!--end::Modal - Create Campaign-->
-    <!--begin::Modal - Create App-->
-    <div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-900px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header">
-                    <!--begin::Modal title-->
-                    <h2>Create App</h2>
-                    <!--end::Modal title-->
-
-                    <!--begin::Close-->
-                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                        <span class="svg-icon svg-icon-1"><svg width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16"
-                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
-                                    fill="currentColor" />
-                                <rect x="7.41422" y="6" width="16" height="2"
-                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
-                            </svg>
-
-                        </span>
-                        <!--end::Svg Icon-->
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--end::Modal header-->
-
-                <!--begin::Modal body-->
-                <div class="modal-body py-lg-10 px-lg-10">
-                    <!--begin::Stepper-->
-                    <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid"
-                        id="kt_modal_create_app_stepper">
-                        <!--begin::Aside-->
-                        <div
-                            class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
-                            <!--begin::Nav-->
-                            <div class="stepper-nav ps-lg-10">
-                                <!--begin::Step 1-->
-                                <div class="stepper-item current" data-kt-stepper-element="nav">
-                                    <!--begin::Wrapper-->
-                                    <div class="stepper-wrapper">
-                                        <!--begin::Icon-->
-                                        <div class="stepper-icon w-40px h-40px">
-                                            <i class="stepper-check fas fa-check"></i>
-                                            <span class="stepper-number">1</span>
-                                        </div>
-                                        <!--end::Icon-->
-
-                                        <!--begin::Label-->
-                                        <div class="stepper-label">
-                                            <h3 class="stepper-title">
-                                                Details
-                                            </h3>
-
-                                            <div class="stepper-desc">
-                                                Name your App
-                                            </div>
-                                        </div>
-                                        <!--end::Label-->
-                                    </div>
-                                    <!--end::Wrapper-->
-
-                                    <!--begin::Line-->
-                                    <div class="stepper-line h-40px"></div>
-                                    <!--end::Line-->
-                                </div>
-                                <!--end::Step 1-->
-
-                                <!--begin::Step 2-->
-                                <div class="stepper-item" data-kt-stepper-element="nav">
-                                    <!--begin::Wrapper-->
-                                    <div class="stepper-wrapper">
-                                        <!--begin::Icon-->
-                                        <div class="stepper-icon w-40px h-40px">
-                                            <i class="stepper-check fas fa-check"></i>
-                                            <span class="stepper-number">2</span>
-                                        </div>
-                                        <!--begin::Icon-->
-
-                                        <!--begin::Label-->
-                                        <div class="stepper-label">
-                                            <h3 class="stepper-title">
-                                                Frameworks
-                                            </h3>
-
-                                            <div class="stepper-desc">
-                                                Define your app framework
-                                            </div>
-                                        </div>
-                                        <!--begin::Label-->
-                                    </div>
-                                    <!--end::Wrapper-->
-
-                                    <!--begin::Line-->
-                                    <div class="stepper-line h-40px"></div>
-                                    <!--end::Line-->
-                                </div>
-                                <!--end::Step 2-->
-
-                                <!--begin::Step 3-->
-                                <div class="stepper-item" data-kt-stepper-element="nav">
-                                    <!--begin::Wrapper-->
-                                    <div class="stepper-wrapper">
-                                        <!--begin::Icon-->
-                                        <div class="stepper-icon w-40px h-40px">
-                                            <i class="stepper-check fas fa-check"></i>
-                                            <span class="stepper-number">3</span>
-                                        </div>
-                                        <!--end::Icon-->
-
-                                        <!--begin::Label-->
-                                        <div class="stepper-label">
-                                            <h3 class="stepper-title">
-                                                Database
-                                            </h3>
-
-                                            <div class="stepper-desc">
-                                                Select the app database type
-                                            </div>
-                                        </div>
-                                        <!--end::Label-->
-                                    </div>
-                                    <!--end::Wrapper-->
-
-                                    <!--begin::Line-->
-                                    <div class="stepper-line h-40px"></div>
-                                    <!--end::Line-->
-                                </div>
-                                <!--end::Step 3-->
-
-                                <!--begin::Step 4-->
-                                <div class="stepper-item" data-kt-stepper-element="nav">
-                                    <!--begin::Wrapper-->
-                                    <div class="stepper-wrapper">
-                                        <!--begin::Icon-->
-                                        <div class="stepper-icon w-40px h-40px">
-                                            <i class="stepper-check fas fa-check"></i>
-                                            <span class="stepper-number">4</span>
-                                        </div>
-                                        <!--end::Icon-->
-
-                                        <!--begin::Label-->
-                                        <div class="stepper-label">
-                                            <h3 class="stepper-title">
-                                                Billing
-                                            </h3>
-
-                                            <div class="stepper-desc">
-                                                Provide payment details
-                                            </div>
-                                        </div>
-                                        <!--end::Label-->
-                                    </div>
-                                    <!--end::Wrapper-->
-
-                                    <!--begin::Line-->
-                                    <div class="stepper-line h-40px"></div>
-                                    <!--end::Line-->
-                                </div>
-                                <!--end::Step 4-->
-
-                                <!--begin::Step 5-->
-                                <div class="stepper-item mark-completed" data-kt-stepper-element="nav">
-                                    <!--begin::Wrapper-->
-                                    <div class="stepper-wrapper">
-                                        <!--begin::Icon-->
-                                        <div class="stepper-icon w-40px h-40px">
-                                            <i class="stepper-check fas fa-check"></i>
-                                            <span class="stepper-number">5</span>
-                                        </div>
-                                        <!--end::Icon-->
-
-                                        <!--begin::Label-->
-                                        <div class="stepper-label">
-                                            <h3 class="stepper-title">
-                                                Completed
-                                            </h3>
-
-                                            <div class="stepper-desc">
-                                                Review and Submit
-                                            </div>
-                                        </div>
-                                        <!--end::Label-->
-                                    </div>
-                                    <!--end::Wrapper-->
-                                </div>
-                                <!--end::Step 5-->
-                            </div>
-                            <!--end::Nav-->
-                        </div>
-                        <!--begin::Aside-->
-
-                        <!--begin::Content-->
-                        <div class="flex-row-fluid py-lg-5 px-lg-15">
-                            <!--begin::Form-->
-                            <form class="form" novalidate="novalidate" id="kt_modal_create_app_form">
-                                <!--begin::Step 1-->
-                                <div class="current" data-kt-stepper-element="content">
-                                    <div class="w-100">
-                                        <!--begin::Input group-->
-                                        <div class="fv-row mb-10">
-                                            <!--begin::Label-->
-                                            <label class="d-flex align-items-center fs-5 fw-semibold mb-2">
-                                                <span class="required">App Name</span>
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                    data-bs-toggle="tooltip"
-                                                    title="Specify your unique app name"></i>
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <!--begin::Input-->
-                                            <input type="text"
-                                                class="form-control form-control-lg form-control-solid"
-                                                name="name" placeholder="" value="" />
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Input group-->
-
-                                        <!--begin::Input group-->
-                                        <div class="fv-row">
-                                            <!--begin::Label-->
-                                            <label class="d-flex align-items-center fs-5 fw-semibold mb-4">
-                                                <span class="required">Category</span>
-
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                    data-bs-toggle="tooltip" title="Select your app category"></i>
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <!--begin:Options-->
-                                            <div class="fv-row">
-                                                <!--begin:Option-->
-                                                <label class="d-flex flex-stack mb-5 cursor-pointer">
-                                                    <!--begin:Label-->
-                                                    <span class="d-flex align-items-center me-2">
-                                                        <!--begin:Icon-->
-                                                        <span class="symbol symbol-50px me-6">
-                                                            <span class="symbol-label bg-light-primary">
-                                                                <!--begin::Svg Icon | path: icons/duotune/maps/map004.svg-->
-                                                                <span
-                                                                    class="svg-icon svg-icon-1 svg-icon-primary"><svg
-                                                                        width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path opacity="0.3"
-                                                                            d="M18.4 5.59998C21.9 9.09998 21.9 14.8 18.4 18.3C14.9 21.8 9.2 21.8 5.7 18.3L18.4 5.59998Z"
-                                                                            fill="currentColor" />
-                                                                        <path
-                                                                            d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM19.9 11H13V8.8999C14.9 8.6999 16.7 8.00005 18.1 6.80005C19.1 8.00005 19.7 9.4 19.9 11ZM11 19.8999C9.7 19.6999 8.39999 19.2 7.39999 18.5C8.49999 17.7 9.7 17.2001 11 17.1001V19.8999ZM5.89999 6.90002C7.39999 8.10002 9.2 8.8 11 9V11.1001H4.10001C4.30001 9.4001 4.89999 8.00002 5.89999 6.90002ZM7.39999 5.5C8.49999 4.7 9.7 4.19998 11 4.09998V7C9.7 6.8 8.39999 6.3 7.39999 5.5ZM13 17.1001C14.3 17.3001 15.6 17.8 16.6 18.5C15.5 19.3 14.3 19.7999 13 19.8999V17.1001ZM13 4.09998C14.3 4.29998 15.6 4.8 16.6 5.5C15.5 6.3 14.3 6.80002 13 6.90002V4.09998ZM4.10001 13H11V15.1001C9.1 15.3001 7.29999 16 5.89999 17.2C4.89999 16 4.30001 14.6 4.10001 13ZM18.1 17.1001C16.6 15.9001 14.8 15.2 13 15V12.8999H19.9C19.7 14.5999 19.1 16.0001 18.1 17.1001Z"
-                                                                            fill="currentColor" />
-                                                                    </svg>
-                                                                </span>
-                                                                <!--end::Svg Icon-->
-                                                            </span>
-                                                        </span>
-                                                        <!--end:Icon-->
-
-                                                        <!--begin:Info-->
-                                                        <span class="d-flex flex-column">
-                                                            <span class="fw-bold fs-6">Quick Online Courses</span>
-
-                                                            <span class="fs-7 text-muted">Creating a clear text
-                                                                structure is just one SEO</span>
-                                                        </span>
-                                                        <!--end:Info-->
-                                                    </span>
-                                                    <!--end:Label-->
-
-                                                    <!--begin:Input-->
-                                                    <span class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="category" value="1" />
-                                                    </span>
-                                                    <!--end:Input-->
-                                                </label>
-                                                <!--end::Option-->
-
-                                                <!--begin:Option-->
-                                                <label class="d-flex flex-stack mb-5 cursor-pointer">
-                                                    <!--begin:Label-->
-                                                    <span class="d-flex align-items-center me-2">
-                                                        <!--begin:Icon-->
-                                                        <span class="symbol symbol-50px me-6">
-                                                            <span class="symbol-label bg-light-danger  ">
-                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
-                                                                <span class="svg-icon svg-icon-1 svg-icon-danger"><svg
-                                                                        width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect x="2" y="2"
-                                                                            width="9" height="9"
-                                                                            rx="2" fill="currentColor" />
-                                                                        <rect opacity="0.3" x="13"
-                                                                            y="2" width="9"
-                                                                            height="9" rx="2"
-                                                                            fill="currentColor" />
-                                                                        <rect opacity="0.3" x="13"
-                                                                            y="13" width="9"
-                                                                            height="9" rx="2"
-                                                                            fill="currentColor" />
-                                                                        <rect opacity="0.3" x="2"
-                                                                            y="13" width="9"
-                                                                            height="9" rx="2"
-                                                                            fill="currentColor" />
-                                                                    </svg>
-                                                                </span>
-                                                                <!--end::Svg Icon-->
-                                                            </span>
-                                                        </span>
-                                                        <!--end:Icon-->
-
-                                                        <!--begin:Info-->
-                                                        <span class="d-flex flex-column">
-                                                            <span class="fw-bold fs-6">Face to Face Discussions</span>
-
-                                                            <span class="fs-7 text-muted">Creating a clear text
-                                                                structure is just one aspect</span>
-                                                        </span>
-                                                        <!--end:Info-->
-                                                    </span>
-                                                    <!--end:Label-->
-
-                                                    <!--begin:Input-->
-                                                    <span class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="category" value="2" />
-                                                    </span>
-                                                    <!--end:Input-->
-                                                </label>
-                                                <!--end::Option-->
-
-                                                <!--begin:Option-->
-                                                <label class="d-flex flex-stack cursor-pointer">
-                                                    <!--begin:Label-->
-                                                    <span class="d-flex align-items-center me-2">
-                                                        <!--begin:Icon-->
-                                                        <span class="symbol symbol-50px me-6">
-                                                            <span class="symbol-label bg-light-success">
-                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen013.svg-->
-                                                                <span
-                                                                    class="svg-icon svg-icon-1 svg-icon-success"><svg
-                                                                        width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path opacity="0.3"
-                                                                            d="M20.9 12.9C20.3 12.9 19.9 12.5 19.9 11.9C19.9 11.3 20.3 10.9 20.9 10.9H21.8C21.3 6.2 17.6 2.4 12.9 2V2.9C12.9 3.5 12.5 3.9 11.9 3.9C11.3 3.9 10.9 3.5 10.9 2.9V2C6.19999 2.5 2.4 6.2 2 10.9H2.89999C3.49999 10.9 3.89999 11.3 3.89999 11.9C3.89999 12.5 3.49999 12.9 2.89999 12.9H2C2.5 17.6 6.19999 21.4 10.9 21.8V20.9C10.9 20.3 11.3 19.9 11.9 19.9C12.5 19.9 12.9 20.3 12.9 20.9V21.8C17.6 21.3 21.4 17.6 21.8 12.9H20.9Z"
-                                                                            fill="currentColor" />
-                                                                        <path
-                                                                            d="M16.9 10.9H13.6C13.4 10.6 13.2 10.4 12.9 10.2V5.90002C12.9 5.30002 12.5 4.90002 11.9 4.90002C11.3 4.90002 10.9 5.30002 10.9 5.90002V10.2C10.6 10.4 10.4 10.6 10.2 10.9H9.89999C9.29999 10.9 8.89999 11.3 8.89999 11.9C8.89999 12.5 9.29999 12.9 9.89999 12.9H10.2C10.4 13.2 10.6 13.4 10.9 13.6V13.9C10.9 14.5 11.3 14.9 11.9 14.9C12.5 14.9 12.9 14.5 12.9 13.9V13.6C13.2 13.4 13.4 13.2 13.6 12.9H16.9C17.5 12.9 17.9 12.5 17.9 11.9C17.9 11.3 17.5 10.9 16.9 10.9Z"
-                                                                            fill="currentColor" />
-                                                                    </svg>
-                                                                </span>
-                                                                <!--end::Svg Icon-->
-                                                            </span>
-                                                        </span>
-                                                        <!--end:Icon-->
-
-                                                        <!--begin:Info-->
-                                                        <span class="d-flex flex-column">
-                                                            <span class="fw-bold fs-6">Full Intro Training</span>
-
-                                                            <span class="fs-7 text-muted">Creating a clear text
-                                                                structure copywriting</span>
-                                                        </span>
-                                                        <!--end:Info-->
-                                                    </span>
-                                                    <!--end:Label-->
-
-                                                    <!--begin:Input-->
-                                                    <span class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="category" value="3" />
-                                                    </span>
-                                                    <!--end:Input-->
-                                                </label>
-                                                <!--end::Option-->
-                                            </div>
-                                            <!--end:Options-->
-                                        </div>
-                                        <!--end::Input group-->
-                                    </div>
-                                </div>
-                                <!--end::Step 1-->
-                                <!--begin::Step 2-->
-                                <div data-kt-stepper-element="content">
-                                    <div class="w-100">
-                                        <!--begin::Input group-->
-                                        <div class="fv-row">
-                                            <!--begin::Label-->
-                                            <label class="d-flex align-items-center fs-5 fw-semibold mb-4">
-                                                <span class="required">Select Framework</span>
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                    data-bs-toggle="tooltip"
-                                                    title="Specify your apps framework"></i>
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer mb-5">
-                                                <!--begin:Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin:Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-warning">
-                                                            <i class="fab fa-html5 text-warning fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end:Icon-->
-
-                                                    <!--begin:Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">HTML5</span>
-
-                                                        <span class="fs-7 text-muted">Base Web Projec</span>
-                                                    </span>
-                                                    <!--end:Info-->
-                                                </span>
-                                                <!--end:Label-->
-
-                                                <!--begin:Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" checked
-                                                        name="framework" value="1" />
-                                                </span>
-                                                <!--end:Input-->
-                                            </label>
-                                            <!--end::Option-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer mb-5">
-                                                <!--begin:Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin:Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-success">
-                                                            <i class="fab fa-react text-success fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end:Icon-->
-
-                                                    <!--begin:Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">ReactJS</span>
-                                                        <span class="fs-7 text-muted">Robust and flexible app
-                                                            framework</span>
-                                                    </span>
-                                                    <!--end:Info-->
-                                                </span>
-                                                <!--end:Label-->
-
-                                                <!--begin:Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="framework" value="2" />
-                                                </span>
-                                                <!--end:Input-->
-                                            </label>
-                                            <!--end::Option-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer mb-5">
-                                                <!--begin:Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin:Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-danger">
-                                                            <i class="fab fa-angular text-danger fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end:Icon-->
-
-                                                    <!--begin:Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">Angular</span>
-                                                        <span class="fs-7 text-muted">Powerful data mangement</span>
-                                                    </span>
-                                                    <!--end:Info-->
-                                                </span>
-                                                <!--end:Label-->
-
-                                                <!--begin:Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="framework" value="3" />
-                                                </span>
-                                                <!--end:Input-->
-                                            </label>
-                                            <!--end::Option-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer">
-                                                <!--begin:Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin:Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-primary">
-                                                            <i class="fab fa-vuejs text-primary fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end:Icon-->
-
-                                                    <!--begin:Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">Vue</span>
-                                                        <span class="fs-7 text-muted">Lightweight and responsive
-                                                            framework</span>
-                                                    </span>
-                                                    <!--end:Info-->
-                                                </span>
-                                                <!--end:Label-->
-
-                                                <!--begin:Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="framework" value="4" />
-                                                </span>
-                                                <!--end:Input-->
-                                            </label>
-                                            <!--end::Option-->
-                                        </div>
-                                        <!--end::Input group-->
-                                    </div>
-                                </div>
-                                <!--end::Step 2-->
-                                <!--begin::Step 3-->
-                                <div data-kt-stepper-element="content">
-                                    <div class="w-100">
-                                        <!--begin::Input group-->
-                                        <div class="fv-row mb-10">
-                                            <!--begin::Label-->
-                                            <label class="required fs-5 fw-semibold mb-2">
-                                                Database Name
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <!--begin::Input-->
-                                            <input type="text"
-                                                class="form-control form-control-lg form-control-solid"
-                                                name="dbname" placeholder="" value="master_db" />
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Input group-->
-
-                                        <!--begin::Input group-->
-                                        <div class="fv-row">
-                                            <!--begin::Label-->
-                                            <label class="d-flex align-items-center fs-5 fw-semibold mb-4">
-                                                <span class="required">Select Database Engine</span>
-
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                    data-bs-toggle="tooltip"
-                                                    title="Select your app database engine"></i>
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer mb-5">
-                                                <!--begin::Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin::Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-success">
-                                                            <i class="fas fa-database text-success fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end::Icon-->
-
-                                                    <!--begin::Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">MySQL</span>
-
-                                                        <span class="fs-7 text-muted">Basic MySQL database</span>
-                                                    </span>
-                                                    <!--end::Info-->
-                                                </span>
-                                                <!--end::Label-->
-
-                                                <!--begin::Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="dbengine"
-                                                        checked value="1" />
-                                                </span>
-                                                <!--end::Input-->
-                                            </label>
-                                            <!--end::Option-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer mb-5">
-                                                <!--begin::Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin::Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-danger">
-                                                            <i class="fab fa-google text-danger fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end::Icon-->
-
-                                                    <!--begin::Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">Firebase</span>
-
-                                                        <span class="fs-7 text-muted">Google based app data
-                                                            management</span>
-                                                    </span>
-                                                    <!--end::Info-->
-                                                </span>
-                                                <!--end::Label-->
-
-                                                <!--begin::Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="dbengine"
-                                                        value="2" />
-                                                </span>
-                                                <!--end::Input-->
-                                            </label>
-                                            <!--end::Option-->
-
-                                            <!--begin:Option-->
-                                            <label class="d-flex flex-stack cursor-pointer">
-                                                <!--begin::Label-->
-                                                <span class="d-flex align-items-center me-2">
-                                                    <!--begin::Icon-->
-                                                    <span class="symbol symbol-50px me-6">
-                                                        <span class="symbol-label bg-light-warning">
-                                                            <i class="fab fa-amazon text-warning fs-2x"></i>
-                                                        </span>
-                                                    </span>
-                                                    <!--end::Icon-->
-
-                                                    <!--begin::Info-->
-                                                    <span class="d-flex flex-column">
-                                                        <span class="fw-bold fs-6">DynamoDB</span>
-
-                                                        <span class="fs-7 text-muted">Amazon Fast NoSQL
-                                                            Database</span>
-                                                    </span>
-                                                    <!--end::Info-->
-                                                </span>
-                                                <!--end::Label-->
-
-                                                <!--begin::Input-->
-                                                <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="dbengine"
-                                                        value="3" />
-                                                </span>
-                                                <!--end::Input-->
-                                            </label>
-                                            <!--end::Option-->
-                                        </div>
-                                        <!--end::Input group-->
-                                    </div>
-                                </div>
-                                <!--end::Step 3-->
-                                <!--begin::Step 4-->
-                                <div data-kt-stepper-element="content">
-                                    <div class="w-100">
-                                        <!--begin::Input group-->
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-                                                <span class="required">Name On Card</span>
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                    data-bs-toggle="tooltip"
-                                                    title="Specify a card holder's name"></i>
-                                            </label>
-                                            <!--end::Label-->
-
-                                            <input type="text" class="form-control form-control-solid"
-                                                placeholder="" name="card_name" value="Max Doe" />
-                                        </div>
-                                        <!--end::Input group-->
-
-                                        <!--begin::Input group-->
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="required fs-6 fw-semibold form-label mb-2">Card
-                                                Number</label>
-                                            <!--end::Label-->
-
-                                            <!--begin::Input wrapper-->
-                                            <div class="position-relative">
-                                                <!--begin::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="Enter card number" name="card_number"
-                                                    value="4111 1111 1111 1111" />
-                                                <!--end::Input-->
-
-                                                <!--begin::Card logos-->
-                                                <div class="position-absolute translate-middle-y top-50 end-0 me-5">
-                                                    <img src="../../../assets/media/svg/card-logos/visa.svg"
-                                                        alt="" class="h-25px" />
-                                                    <img src="../../../assets/media/svg/card-logos/mastercard.svg"
-                                                        alt="" class="h-25px" />
-                                                    <img src="../../../assets/media/svg/card-logos/american-express.svg"
-                                                        alt="" class="h-25px" />
-                                                </div>
-                                                <!--end::Card logos-->
-                                            </div>
-                                            <!--end::Input wrapper-->
-                                        </div>
-                                        <!--end::Input group-->
-
-                                        <!--begin::Input group-->
-                                        <div class="row mb-10">
-                                            <!--begin::Col-->
-                                            <div class="col-md-8 fv-row">
-                                                <!--begin::Label-->
-                                                <label class="required fs-6 fw-semibold form-label mb-2">Expiration
-                                                    Date</label>
-                                                <!--end::Label-->
-
-                                                <!--begin::Row-->
-                                                <div class="row fv-row">
-                                                    <!--begin::Col-->
-                                                    <div class="col-6">
-                                                        <select name="card_expiry_month"
-                                                            class="form-select form-select-solid"
-                                                            data-control="select2" data-hide-search="true"
-                                                            data-placeholder="Month">
-                                                            <option></option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                            <option value="11">11</option>
-                                                            <option value="12">12</option>
-                                                        </select>
-                                                    </div>
-                                                    <!--end::Col-->
-
-                                                    <!--begin::Col-->
-                                                    <div class="col-6">
-                                                        <select name="card_expiry_year"
-                                                            class="form-select form-select-solid"
-                                                            data-control="select2" data-hide-search="true"
-                                                            data-placeholder="Year">
-                                                            <option></option>
-                                                            <option value="2023">2023</option>
-                                                            <option value="2024">2024</option>
-                                                            <option value="2025">2025</option>
-                                                            <option value="2026">2026</option>
-                                                            <option value="2027">2027</option>
-                                                            <option value="2028">2028</option>
-                                                            <option value="2029">2029</option>
-                                                            <option value="2030">2030</option>
-                                                            <option value="2031">2031</option>
-                                                            <option value="2032">2032</option>
-                                                            <option value="2033">2033</option>
-                                                        </select>
-                                                    </div>
-                                                    <!--end::Col-->
-                                                </div>
-                                                <!--end::Row-->
-                                            </div>
-                                            <!--end::Col-->
-
-                                            <!--begin::Col-->
-                                            <div class="col-md-4 fv-row">
-                                                <!--begin::Label-->
-                                                <label
-                                                    class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-                                                    <span class="required">CVV</span>
-                                                    <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                        data-bs-toggle="tooltip" title="Enter a card CVV code"></i>
-                                                </label>
-                                                <!--end::Label-->
-
-                                                <!--begin::Input wrapper-->
-                                                <div class="position-relative">
-                                                    <!--begin::Input-->
-                                                    <input type="text" class="form-control form-control-solid"
-                                                        minlength="3" maxlength="4" placeholder="CVV"
-                                                        name="card_cvv" />
-                                                    <!--end::Input-->
-
-                                                    <!--begin::CVV icon-->
-                                                    <div
-                                                        class="position-absolute translate-middle-y top-50 end-0 me-3">
-                                                        <!--begin::Svg Icon | path: icons/duotune/finance/fin002.svg-->
-                                                        <span class="svg-icon svg-icon-2hx"><svg width="24"
-                                                                height="24" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M22 7H2V11H22V7Z" fill="currentColor" />
-                                                                <path opacity="0.3"
-                                                                    d="M21 19H3C2.4 19 2 18.6 2 18V6C2 5.4 2.4 5 3 5H21C21.6 5 22 5.4 22 6V18C22 18.6 21.6 19 21 19ZM14 14C14 13.4 13.6 13 13 13H5C4.4 13 4 13.4 4 14C4 14.6 4.4 15 5 15H13C13.6 15 14 14.6 14 14ZM16 15.5C16 16.3 16.7 17 17.5 17H18.5C19.3 17 20 16.3 20 15.5C20 14.7 19.3 14 18.5 14H17.5C16.7 14 16 14.7 16 15.5Z"
-                                                                    fill="currentColor" />
-                                                            </svg>
-                                                        </span>
-                                                        <!--end::Svg Icon-->
-                                                    </div>
-                                                    <!--end::CVV icon-->
-                                                </div>
-                                                <!--end::Input wrapper-->
-                                            </div>
-                                            <!--end::Col-->
-                                        </div>
-                                        <!--end::Input group-->
-
-                                        <!--begin::Input group-->
-                                        <div class="d-flex flex-stack">
-                                            <!--begin::Label-->
-                                            <div class="me-5">
-                                                <label class="fs-6 fw-semibold form-label">Save Card for further
-                                                    billing?</label>
-                                                <div class="fs-7 fw-semibold text-muted">If you need more info, please
-                                                    check budget planning</div>
-                                            </div>
-                                            <!--end::Label-->
-
-                                            <!--begin::Switch-->
-                                            <label class="form-check form-switch form-check-custom form-check-solid">
-                                                <input class="form-check-input" type="checkbox" value="1"
-                                                    checked="checked" />
-                                                <span class="form-check-label fw-semibold text-muted">
-                                                    Save Card
-                                                </span>
-                                            </label>
-                                            <!--end::Switch-->
-                                        </div>
-                                        <!--end::Input group-->
-
-                                    </div>
-                                </div>
-                                <!--end::Step 4-->
-                                <!--begin::Step 5-->
-                                <div data-kt-stepper-element="content">
-                                    <div class="w-100 text-center">
-                                        <!--begin::Heading-->
-                                        <h1 class="fw-bold text-dark mb-3">Release!</h1>
-                                        <!--end::Heading-->
-
-                                        <!--begin::Description-->
-                                        <div class="text-muted fw-semibold fs-3">
-                                            Submit your app to kickstart your project.
-                                        </div>
-                                        <!--end::Description-->
-
-                                        <!--begin::Illustration-->
-                                        <div class="text-center px-4 py-15">
-                                            <img src="../../../assets/media/illustrations/sketchy-1/9.png"
-                                                alt="" class="mw-100 mh-300px" />
-                                        </div>
-                                        <!--end::Illustration-->
-                                    </div>
-                                </div>
-                                <!--end::Step 5-->
-
-
-                                <!--begin::Actions-->
-                                <div class="d-flex flex-stack pt-10">
-                                    <!--begin::Wrapper-->
-                                    <div class="me-2">
-                                        <button type="button" class="btn btn-lg btn-light-primary me-3"
-                                            data-kt-stepper-action="previous">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr063.svg-->
-                                            <span class="svg-icon svg-icon-3 me-1"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="6" y="11"
-                                                        width="13" height="2" rx="1"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon--> Back
-                                        </button>
-                                    </div>
-                                    <!--end::Wrapper-->
-
-                                    <!--begin::Wrapper-->
-                                    <div>
-                                        <button type="button" class="btn btn-lg btn-primary"
-                                            data-kt-stepper-action="submit">
-                                            <span class="indicator-label">
-                                                Submit
-                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                                <span class="svg-icon svg-icon-3 ms-2 me-0"><svg width="24"
-                                                        height="24" viewBox="0 0 24 24" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect opacity="0.5" x="18" y="13"
-                                                            width="13" height="2" rx="1"
-                                                            transform="rotate(-180 18 13)" fill="currentColor" />
-                                                        <path
-                                                            d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                </span>
-                                                <!--end::Svg Icon-->
-                                            </span>
-                                            <span class="indicator-progress">
-                                                Please wait... <span
-                                                    class="spinner-border spinner-border-sm align-middle ms-2"></span>
-                                            </span>
-                                        </button>
-
-                                        <button type="button" class="btn btn-lg btn-primary"
-                                            data-kt-stepper-action="next">
-                                            Continue
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-3 ms-1 me-0"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13"
-                                                        width="13" height="2" rx="1"
-                                                        transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path
-                                                        d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </button>
-                                    </div>
-                                    <!--end::Wrapper-->
-                                </div>
-                                <!--end::Actions-->
-                            </form>
-                            <!--end::Form-->
-                        </div>
-                        <!--end::Content-->
-                    </div>
-                    <!--end::Stepper-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-            <!--end::Modal content-->
-        </div>
-        <!--end::Modal dialog-->
-    </div>
-    <!--end::Modal - Create App-->
     <!--begin::Modal - New Card-->
     <div class="modal fade" id="kt_modal_new_card" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
@@ -11155,7 +9405,7 @@
                 <!--begin::Modal header-->
                 <div class="modal-header">
                     <!--begin::Modal title-->
-                    <h2>Add New Card</h2>
+                    <h2>Tambah Kategori</h2>
                     <!--end::Modal title-->
 
                     <!--begin::Close-->
@@ -11180,179 +9430,35 @@
                 <!--begin::Modal body-->
                 <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
                     <!--begin::Form-->
-                    <form id="kt_modal_new_card_form" class="form" action="#">
+                    <form id="kt_modal_new_card_form" class="form needs-validation" method="POST"
+                        action="/kategoripost" novalidate="novalidate">
+                        @csrf
                         <!--begin::Input group-->
                         <div class="d-flex flex-column mb-7 fv-row">
                             <!--begin::Label-->
                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-                                <span class="required">Name On Card</span>
+                                <span class="required">Nama Kategori</span>
                                 <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                    title="Specify a card holder's name"></i>
+                                    title="Masukkan nama kategori seperti contoh dibawah ini"></i>
                             </label>
                             <!--end::Label-->
-
-                            <input type="text" class="form-control form-control-solid" placeholder=""
-                                name="card_name" value="Max Doe" />
+                            <input type="hidden" name="ikon" value="try">
+                            <input type="text" class="form-control form-control-solid"
+                                placeholder="Makanan Ringan" name="kategori" value="" required />
+                            <div class="invalid-feedback">
+                                Harap isi bidang ini
+                            </div>
                         </div>
                         <!--end::Input group-->
-
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-7 fv-row">
-                            <!--begin::Label-->
-                            <label class="required fs-6 fw-semibold form-label mb-2">Card Number</label>
-                            <!--end::Label-->
-
-                            <!--begin::Input wrapper-->
-                            <div class="position-relative">
-                                <!--begin::Input-->
-                                <input type="text" class="form-control form-control-solid"
-                                    placeholder="Enter card number" name="card_number"
-                                    value="4111 1111 1111 1111" />
-                                <!--end::Input-->
-
-                                <!--begin::Card logos-->
-                                <div class="position-absolute translate-middle-y top-50 end-0 me-5">
-                                    <img src="../../../assets/media/svg/card-logos/visa.svg" alt=""
-                                        class="h-25px" />
-                                    <img src="../../../assets/media/svg/card-logos/mastercard.svg" alt=""
-                                        class="h-25px" />
-                                    <img src="../../../assets/media/svg/card-logos/american-express.svg"
-                                        alt="" class="h-25px" />
-                                </div>
-                                <!--end::Card logos-->
-                            </div>
-                            <!--end::Input wrapper-->
-                        </div>
-                        <!--end::Input group-->
-
-                        <!--begin::Input group-->
-                        <div class="row mb-10">
-                            <!--begin::Col-->
-                            <div class="col-md-8 fv-row">
-                                <!--begin::Label-->
-                                <label class="required fs-6 fw-semibold form-label mb-2">Expiration Date</label>
-                                <!--end::Label-->
-
-                                <!--begin::Row-->
-                                <div class="row fv-row">
-                                    <!--begin::Col-->
-                                    <div class="col-6">
-                                        <select name="card_expiry_month" class="form-select form-select-solid"
-                                            data-control="select2" data-hide-search="true"
-                                            data-placeholder="Month">
-                                            <option></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                        </select>
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-6">
-                                        <select name="card_expiry_year" class="form-select form-select-solid"
-                                            data-control="select2" data-hide-search="true"
-                                            data-placeholder="Year">
-                                            <option></option>
-                                            <option value="2023">2023</option>
-                                            <option value="2024">2024</option>
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                            <option value="2028">2028</option>
-                                            <option value="2029">2029</option>
-                                            <option value="2030">2030</option>
-                                            <option value="2031">2031</option>
-                                            <option value="2032">2032</option>
-                                            <option value="2033">2033</option>
-                                        </select>
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-                            </div>
-                            <!--end::Col-->
-
-                            <!--begin::Col-->
-                            <div class="col-md-4 fv-row">
-                                <!--begin::Label-->
-                                <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-                                    <span class="required">CVV</span>
-                                    <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                        title="Enter a card CVV code"></i>
-                                </label>
-                                <!--end::Label-->
-
-                                <!--begin::Input wrapper-->
-                                <div class="position-relative">
-                                    <!--begin::Input-->
-                                    <input type="text" class="form-control form-control-solid" minlength="3"
-                                        maxlength="4" placeholder="CVV" name="card_cvv" />
-                                    <!--end::Input-->
-
-                                    <!--begin::CVV icon-->
-                                    <div class="position-absolute translate-middle-y top-50 end-0 me-3">
-                                        <!--begin::Svg Icon | path: icons/duotune/finance/fin002.svg-->
-                                        <span class="svg-icon svg-icon-2hx"><svg width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M22 7H2V11H22V7Z" fill="currentColor" />
-                                                <path opacity="0.3"
-                                                    d="M21 19H3C2.4 19 2 18.6 2 18V6C2 5.4 2.4 5 3 5H21C21.6 5 22 5.4 22 6V18C22 18.6 21.6 19 21 19ZM14 14C14 13.4 13.6 13 13 13H5C4.4 13 4 13.4 4 14C4 14.6 4.4 15 5 15H13C13.6 15 14 14.6 14 14ZM16 15.5C16 16.3 16.7 17 17.5 17H18.5C19.3 17 20 16.3 20 15.5C20 14.7 19.3 14 18.5 14H17.5C16.7 14 16 14.7 16 15.5Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                    </div>
-                                    <!--end::CVV icon-->
-                                </div>
-                                <!--end::Input wrapper-->
-                            </div>
-                            <!--end::Col-->
-                        </div>
-                        <!--end::Input group-->
-
-                        <!--begin::Input group-->
-                        <div class="d-flex flex-stack">
-                            <!--begin::Label-->
-                            <div class="me-5">
-                                <label class="fs-6 fw-semibold form-label">Save Card for further billing?</label>
-                                <div class="fs-7 fw-semibold text-muted">If you need more info, please check budget
-                                    planning</div>
-                            </div>
-                            <!--end::Label-->
-
-                            <!--begin::Switch-->
-                            <label class="form-check form-switch form-check-custom form-check-solid">
-                                <input class="form-check-input" type="checkbox" value="1"
-                                    checked="checked" />
-                                <span class="form-check-label fw-semibold text-muted">
-                                    Save Card
-                                </span>
-                            </label>
-                            <!--end::Switch-->
-                        </div>
-                        <!--end::Input group-->
-
-
                         <!--begin::Actions-->
                         <div class="text-center pt-15">
                             <button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">
-                                Discard
+                                Batal
                             </button>
 
                             <button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
                                 <span class="indicator-label">
-                                    Submit
+                                    Kirim
                                 </span>
                                 <span class="indicator-progress">
                                     Please wait... <span
@@ -11415,63 +9521,6 @@
                         data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="inline">
 
                         <!--begin::Form-->
-                        <form data-kt-search-element="form" class="w-100 position-relative mb-5"
-                            autocomplete="off">
-                            <!--begin::Hidden input(Added to disable form autocomplete)-->
-                            <input type="hidden" />
-                            <!--end::Hidden input-->
-
-                            <!--begin::Icon-->
-                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                            <span
-                                class="svg-icon svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y"><svg
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546"
-                                        height="2" rx="1" transform="rotate(45 17.0365 15.1223)"
-                                        fill="currentColor" />
-                                    <path
-                                        d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                            <!--end::Icon-->
-
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-lg form-control-solid px-15"
-                                name="search" value=""
-                                placeholder="Search by username, full name or email..."
-                                data-kt-search-element="input" />
-                            <!--end::Input-->
-
-                            <!--begin::Spinner-->
-                            <span class="position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5"
-                                data-kt-search-element="spinner">
-                                <span class="spinner-border h-15px w-15px align-middle text-muted"></span>
-                            </span>
-                            <!--end::Spinner-->
-
-                            <!--begin::Reset-->
-                            <span
-                                class="btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 me-5 d-none"
-                                data-kt-search-element="clear">
-                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                                <span class="svg-icon svg-icon-2 svg-icon-lg-1 me-0"><svg width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect opacity="0.5" x="6" y="17.3137" width="16"
-                                            height="2" rx="1" transform="rotate(-45 6 17.3137)"
-                                            fill="currentColor" />
-                                        <rect x="7.41422" y="6" width="16" height="2"
-                                            rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
-                                    </svg>
-
-                                </span>
-                                <!--end::Svg Icon-->
-                            </span>
-                            <!--end::Reset-->
-                        </form>
                         <!--end::Form-->
 
                         <!--begin::Wrapper-->
@@ -12437,703 +10486,31 @@
         <!--end::Modal dialog-->
     </div>
     <!--end::Modal - Users Search-->
-    <!--begin::Modal - Invite Friends-->
-    <div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header pb-0 border-0 justify-content-end">
-                    <!--begin::Close-->
-                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                        <span class="svg-icon svg-icon-1"><svg width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16"
-                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
-                                    fill="currentColor" />
-                                <rect x="7.41422" y="6" width="16" height="2"
-                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
-                            </svg>
-
-                        </span>
-                        <!--end::Svg Icon-->
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--begin::Modal header-->
-
-                <!--begin::Modal body-->
-                <div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
-                    <!--begin::Heading-->
-                    <div class="text-center mb-13">
-                        <!--begin::Title-->
-                        <h1 class="mb-3">Invite a Friend</h1>
-                        <!--end::Title-->
-
-                        <!--begin::Description-->
-                        <div class="text-muted fw-semibold fs-5">
-                            If you need more info, please check out
-                            <a href="#" class="link-primary fw-bold">FAQ Page</a>.
-                        </div>
-                        <!--end::Description-->
-                    </div>
-                    <!--end::Heading-->
-
-                    <!--begin::Google Contacts Invite-->
-                    <div class="btn btn-light-primary fw-bold w-100 mb-8">
-                        <img alt="Logo" src="../../../assets/media/svg/brand-logos/google-icon.svg"
-                            class="h-20px me-3" />
-                        Invite Gmail Contacts
-                    </div>
-                    <!--end::Google Contacts Invite-->
-
-                    <!--begin::Separator-->
-                    <div class="separator d-flex flex-center mb-8">
-                        <span class="text-uppercase bg-body fs-7 fw-semibold text-muted px-3">or</span>
-                    </div>
-                    <!--end::Separator-->
-
-                    <!--begin::Textarea-->
-                    <textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here">
-                </textarea>
-                    <!--end::Textarea-->
-
-                    <!--begin::Users-->
-                    <div class="mb-10">
-                        <!--begin::Heading-->
-                        <div class="fs-6 fw-semibold mb-2">Your Invitations</div>
-                        <!--end::Heading-->
-
-                        <!--begin::List-->
-                        <div class="mh-300px scroll-y me-n7 pe-7">
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-6.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
-
-                                        <div class="fw-semibold text-muted">smith@kpmg.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2" selected>Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            M </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
-
-                                        <div class="fw-semibold text-muted">melody@altbox.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1" selected>Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-1.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max Smith</a>
-
-                                        <div class="fw-semibold text-muted">max@kt.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-5.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
-
-                                        <div class="fw-semibold text-muted">sean@dellito.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2" selected>Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-25.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian Cox</a>
-
-                                        <div class="fw-semibold text-muted">brian@exchange.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-warning text-warning fw-semibold">
-                                            C </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela
-                                            Collins</a>
-
-                                        <div class="fw-semibold text-muted">mik@pex.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2" selected>Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-9.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis
-                                            Mitcham</a>
-
-                                        <div class="fw-semibold text-muted">f.mit@kpmg.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            O </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia Wild</a>
-
-                                        <div class="fw-semibold text-muted">olivia@corpmail.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2" selected>Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-primary text-primary fw-semibold">
-                                            N </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
-
-                                        <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1" selected>Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-23.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
-
-                                        <div class="fw-semibold text-muted">dam@consilting.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            E </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Bold</a>
-
-                                        <div class="fw-semibold text-muted">emma@intenso.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2" selected>Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-12.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
-
-                                        <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1" selected>Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-info text-info fw-semibold">
-                                            A </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert Doe</a>
-
-                                        <div class="fw-semibold text-muted">robert@benko.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-13.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John Miller</a>
-
-                                        <div class="fw-semibold text-muted">miller@mapple.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-success text-success fw-semibold">
-                                            L </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy Kunic</a>
-
-                                        <div class="fw-semibold text-muted">lucy.m@fentech.com</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2" selected>Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-21.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan
-                                            Wilder</a>
-
-                                        <div class="fw-semibold text-muted">ethan@loop.com.au</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1" selected>Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3">Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-4 ">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="../../../assets/media/avatars/300-21.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-5">
-                                        <a href="#"
-                                            class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan
-                                            Wilder</a>
-
-                                        <div class="fw-semibold text-muted">ethan@loop.com.au</div>
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Access menu-->
-                                <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm"
-                                        data-control="select2" data-dropdown-parent="#kt_modal_invite_friends"
-                                        data-hide-search="true">
-                                        <option value="1">Guest</option>
-                                        <option value="2">Owner</option>
-                                        <option value="3" selected>Can Edit</option>
-                                    </select>
-                                </div>
-                                <!--end::Access menu-->
-                            </div>
-                            <!--end::User-->
-                        </div>
-                        <!--end::List-->
-                    </div>
-                    <!--end::Users-->
-
-                    <!--begin::Notice-->
-                    <div class="d-flex flex-stack">
-                        <!--begin::Label-->
-                        <div class="me-5 fw-semibold">
-                            <label class="fs-6">Adding Users by Team Members</label>
-                            <div class="fs-7 text-muted">If you need more info, please check budget planning</div>
-                        </div>
-                        <!--end::Label-->
-
-                        <!--begin::Switch-->
-                        <label class="form-check form-switch form-check-custom form-check-solid">
-                            <input class="form-check-input" type="checkbox" value="1" checked="checked" />
-
-                            <span class="form-check-label fw-semibold text-muted">
-                                Allowed
-                            </span>
-                        </label>
-                        <!--end::Switch-->
-                    </div>
-                    <!--end::Notice-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-            <!--end::Modal content-->
-        </div>
-        <!--end::Modal dialog-->
-    </div>
-    <!--end::Modal - Invite Friend-->
-    <!--end::Modals-->
 
     <!--begin::Javascript-->
     @include('layouts.script')
+    <script>
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
     <!--begin::Javascript-->
 </body>
 <!--end::Body-->

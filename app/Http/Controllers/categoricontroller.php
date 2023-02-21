@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\kategori;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -10,7 +11,21 @@ class categoricontroller extends Controller
 {
     public function index()
     {
-        return view('adminpenjual.kategori.index');
+        $data = kategori::all();
+        return view('adminpenjual.kategori.index',compact('data'));
+    }
+    public function post(request $request)
+    {
+        // dd($request->all());
+        $data = kategori::create($request->all());
+        return redirect("/kategori")->with("success","Kategori berhasil Ditambahkan");
+    }
+
+    public function destroy($id){
+        $data = kategori::findorfail($id);
+        $data->delete();
+        $data->save();
+        return redirect ("/kategori")->with("success","Kategori berhasil dihapus");
     }
 
 }

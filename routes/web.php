@@ -22,7 +22,10 @@ Route::get('/', function () {
 
 Route::get('/beranda',[BerandaController::class, 'beranda']);
 Route::get('/kategori',[categoricontroller::class, 'index']);
+Route::post('/kategoripost',[categoricontroller::class, 'post']);
+Route::post('/kategoriedit',[categoricontroller::class, 'edit']);
+Route::get('/kategoridestroy/{id}',[categoricontroller::class, 'destroy']);
 
-//Profile 
+//Profile
 Route::get('/profile',[ProfileController::class, 'profile']);
 
