@@ -1,0 +1,30 @@
+.image-food {}
+
+.w-fc {
+    width: fit-content;
+}
+
+.bg-abu {
+    background-color: rgba(249, 249, 249) !important;
+}
+
+.image-food img {
+    width: 119px;
+    height: 6pc;
+}
+
+.desc-food {
+    padding-left: 1pc;
+}
+
+.action {
+    margin-left: auto;
+}
+
+.image-input-placeholder {
+    background-image: url('../../../assets/media/svg/files/blank-image.svg');
+}
+
+[data-bs-theme="dark"] .image-input-placeholder {
+    background-image: url('svg/avatars/blank-dark.svg');
+}

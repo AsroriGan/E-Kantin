@@ -14,6 +14,7 @@ class categoricontroller extends Controller
         $data = kategori::all();
         return view('adminpenjual.kategori.index',compact('data'));
     }
+
     public function post(request $request)
     {
         // dd($request->all());
@@ -21,10 +22,17 @@ class categoricontroller extends Controller
         return redirect("/kategori")->with("success","Kategori berhasil Ditambahkan");
     }
 
+    public function edit(request $request,$id)
+    {
+        // dd($request->all());
+        $data = kategori::findorfail($id);
+        $data->update($request->all());
+        return redirect("/kategori")->with("success","Kategori berhasil Diedit");
+    }
+
     public function destroy($id){
         $data = kategori::findorfail($id);
         $data->delete();
-        $data->save();
         return redirect ("/kategori")->with("success","Kategori berhasil dihapus");
     }
 

@@ -63,7 +63,7 @@
                         <div class="page-title d-flex flex-column align-items-start me-3 py-2 py-lg-0 gap-2">
                             <!--begin::Title-->
                             <h1 class="d-flex text-dark fw-bold m-0 fs-3">
-                                Daftar Kategori
+                                Daftar Menu Makanan
                             </h1>
                             <!--end::Title-->
 
@@ -77,7 +77,7 @@
                                 <!--end::Item-->
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-gray-600">
-                                    daftar kategori</li>
+                                    daftar Menu Makanan</li>
                                 <!--end::Item-->
                             </ul>
                             <!--end::Breadcrumb-->
@@ -88,7 +88,7 @@
                             <!--begin::Button-->
                             <a href="#" class="btn btn-primary er fs-6 px-8 py-4" data-bs-toggle="modal"
                                 data-bs-target="#kt_modal_new_card">
-                                Tambah Kategori</a>
+                                Tambah Menu Makanan</a>
                             <!--end::Button-->
                         </div>
                         <!--end::Actions-->
@@ -99,135 +99,309 @@
 
                 <!--begin::Container-->
                 <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start  container-xxl ">
-
-                    <!--begin::Post-->
                     <div class="content flex-row-fluid" id="kt_content">
-                        <!--begin::Card-->
-                        <div class="card card-xl-stretch mb-xl-8">
-                            <!--begin::Header-->
-
-                            <!--end::Header-->
-
-                            <!--begin::Body-->
-                            <div class="card-body pt-5">
-                                @foreach ($data as $data)
-                                    <!--begin::Item-->
-                                    <div class="d-flex align-items-center mb-7">
-                                        <!--begin::Symbol-->
-                                        <div class="symbol symbol-50px me-5">
-                                            <span class="symbol-label bg-light-success">
-                                                <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
-                                                <span class="svg-icon svg-icon-2x svg-icon-success"><svg width="24"
-                                                        height="24" viewBox="0 0 24 24" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path opacity="0.3"
-                                                            d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                </span>
-                                                <!--end::Svg Icon-->
-                                            </span>
+                        <!--begin::Row-->
+                        <div class="row g-6 g-xl-9">
+                            <!--begin::Col-->
+                            <div class="col-sm-6 col-xl-4">
+                                <!--begin::Card-->
+                                <div class="card h-100 px-9 pt-6 pb-8">
+                                    <!--begin::Card body-->
+                                    <div class="card-body d-flex p-0 mb-3">
+                                        <div class="image-food symbol">
+                                            <img class="p-3 bg-abu symbol"
+                                                src="{{ asset('templateuser/assets/images/food/food2.png') }}"
+                                                alt="">
                                         </div>
-                                        <!--end::Symbol-->
-
-                                        <!--begin::Text-->
-                                        <div class="d-flex align-items-center w-100">
-                                            <div class="p-2">
-                                                <a href="#"
-                                                    class="text-dark text-hover-primary fs-6 fw-bold">{{ $data->kategori }}</a>
-                                            </div>
-                                            <div class="p-2 ms-auto">
-                                                <a href="#" class="btn btn-sm btn-light btn-active-light-primary"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#edit_kategori{{ $data->id }}">
-                                                    Edit</a>
-                                                <a href="/kategoridestroy/{{$data->id}}" class="btn btn-sm btn-light btn-active-light-primary">
-                                                    Delete</a>
-                                            </div>
-                                            {{-- <span class="text-muted fw-bold">Project Manager</span> --}}
+                                        <div class="desc-food w-100">
+                                            <div class="fs-1 fw-bold mb-2 ms-3">Nasi Goreng</div>
+                                            <label
+                                                class="fs-4 ms-3 fw-semibold text-hover-primary text-gray-600 m-0">Rp.10000</label>
+                                            <div class="fw-semibold text-gray-400 ms-3">
+                                                Makanan Berat</div>
                                         </div>
-                                        <!--end::Text-->
                                     </div>
-                                    <!--end::Item-->
-                                    <!--begin::Modal - New Card-->
-                                    <div class="modal fade" id="edit_kategori{{ $data->id }}" tabindex="-1"
-                                        aria-hidden="true">
-                                        <!--begin::Modal dialog-->
-                                        <div class="modal-dialog modal-dialog-centered mw-650px">
-                                            <!--begin::Modal content-->
-                                            <div class="modal-content">
-                                                <!--begin::Modal header-->
-                                                <div class="modal-header">
-                                                    <!--begin::Modal title-->
-                                                    <h2>Edit Kategori</h2>
-                                                    <!--end::Modal title-->
+                                    <div class="d-flex align-items-center fw-semibold">
+                                        {{-- <span class="badge bg-light text-gray-700 px-3 py-2 me-2">40%</span> --}}
+                                        <div class="badge badge-light-danger px-3 py-2 me-2">Tidak tersedia</div>
+                                        {{-- <span class="text-gray-400 fs-7">Impressions</span> --}}
+                                        <div class="action">
+                                            <span class="badge badge-primary">Edit</span>
+                                            <span class="badge badge-danger">Hapus</span>
+                                        </div>
+                                    </div>
+                                    <!--end::Card body-->
+                                    <!--begin::Card footer-->
+                                    <!--end::Card footer-->
 
-                                                    <!--begin::Close-->
-                                                    <div class="btn btn-sm btn-icon btn-active-color-primary"
-                                                        data-bs-dismiss="modal">
-                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                                                        <span class="svg-icon svg-icon-1"><svg width="24"
-                                                                height="24" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <rect opacity="0.5" x="6" y="17.3137"
-                                                                    width="16" height="2" rx="1"
-                                                                    transform="rotate(-45 6 17.3137)"
-                                                                    fill="currentColor" />
-                                                                <rect x="7.41422" y="6" width="16"
-                                                                    height="2" rx="1"
-                                                                    transform="rotate(45 7.41422 6)"
-                                                                    fill="currentColor" />
-                                                            </svg>
+                                </div>
+                                <!--end::Card-->
+                            </div>
+                            <!--end::Col-->
 
-                                                        </span>
-                                                        <!--end::Svg Icon-->
-                                                    </div>
-                                                    <!--end::Close-->
+                            <!--begin::Col-->
+                            <div class="col-sm-6 col-xl-4">
+                                <!--begin::Card-->
+                                <div class="card h-100 ">
+                                    <!--begin::Card body-->
+                                    <div class="card-body d-flex flex-column px-9 pt-6 pb-8">
+                                        <!--begin::Heading-->
+                                        <div class="fs-2tx fw-bold mb-3">
+                                            807k </div>
+                                        <!--end::Heading-->
+
+                                        <!--begin::Stats-->
+                                        <div class="d-flex align-items-center flex-wrap mb-5 mt-auto fs-6">
+                                            <!--SVG file not found: icons/duotune/arrows/arr007.svg.svg-->
+
+                                            <!--begin::Number-->
+                                            <div class="fw-bold text-success me-2">
+                                                +17.62% </div>
+                                            <!--end::Number-->
+
+                                            <!--begin::Label-->
+                                            <div class="fw-semibold text-gray-400">
+                                                Followers growth </div>
+                                            <!--end::Label-->
+                                        </div>
+                                        <!--end::Stats-->
+
+                                        <!--begin::Indicator-->
+                                        <div class="d-flex align-items-center fw-semibold">
+                                            <span class="badge bg-light text-gray-700 px-3 py-2 me-2">5%</span>
+
+                                            <span class="text-gray-400 fs-7">New trials</span>
+
+                                        </div>
+                                        <!--end::Indicator-->
+                                    </div>
+                                    <!--end::Card body-->
+                                </div>
+                                <!--end::Card-->
+                            </div>
+                            <!--end::Col-->
+                        </div>
+                        <!--end::Row-->
+
+                        <!--begin::Pagination-->
+
+                        <!--end::Pagination-->
+                        <!--begin::Modals-->
+                        <!--begin::Modal - Offer A Deal-->
+                        <div class="modal fade" id="kt_modal_offer_a_deal" tabindex="-1" aria-hidden="true">
+                            <!--begin::Modal dialog-->
+                            <div class="modal-dialog modal-dialog-centered mw-1000px">
+                                <!--begin::Modal content-->
+                                <div class="modal-content">
+                                    <!--begin::Modal header-->
+                                    <div class="modal-header py-7 d-flex justify-content-between">
+                                        <!--begin::Modal title-->
+                                        <h2>Offer a Deal</h2>
+                                        <!--end::Modal title-->
+
+                                        <!--begin::Close-->
+                                        <div class="btn btn-sm btn-icon btn-active-color-primary"
+                                            data-bs-dismiss="modal">
+                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                                            <span class="svg-icon svg-icon-1"><svg width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect opacity="0.5" x="6" y="17.3137" width="16"
+                                                        height="2" rx="1" transform="rotate(-45 6 17.3137)"
+                                                        fill="currentColor">
+                                                    </rect>
+                                                    <rect x="7.41422" y="6" width="16" height="2"
+                                                        rx="1" transform="rotate(45 7.41422 6)"
+                                                        fill="currentColor"></rect>
+                                                </svg>
+
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </div>
+                                        <!--end::Close-->
+                                    </div>
+                                    <!--begin::Modal header-->
+
+                                    <!--begin::Modal body-->
+                                    <div class="modal-body scroll-y m-5">
+                                        <!--begin::Stepper-->
+                                        <div class="stepper stepper-links d-flex flex-column"
+                                            id="kt_modal_offer_a_deal_stepper" data-kt-stepper="true">
+                                            <!--begin::Nav-->
+                                            <div class="stepper-nav justify-content-center py-2">
+                                                <!--begin::Step 1-->
+                                                <div class="stepper-item me-5 me-md-15 current"
+                                                    data-kt-stepper-element="nav">
+                                                    <h3 class="stepper-title">
+                                                        Deal Type
+                                                    </h3>
                                                 </div>
-                                                <!--end::Modal header-->
+                                                <!--end::Step 1-->
 
-                                                <!--begin::Modal body-->
-                                                <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-                                                    <!--begin::Form-->
-                                                    <form id="kt_modal_new_card_form{{ $data->id }}"
-                                                        class="form needs-validation" method="POST"
-                                                        action="/kategoriedit/{{$data->id}}" novalidate="novalidate">
-                                                        @csrf
+                                                <!--begin::Step 2-->
+                                                <div class="stepper-item me-5 me-md-15" data-kt-stepper-element="nav">
+                                                    <h3 class="stepper-title">
+                                                        Deal Details
+                                                    </h3>
+                                                </div>
+                                                <!--end::Step 2-->
+
+                                                <!--begin::Step 3-->
+                                                <div class="stepper-item me-5 me-md-15" data-kt-stepper-element="nav">
+                                                    <h3 class="stepper-title">
+                                                        Finance Settings
+                                                    </h3>
+                                                </div>
+                                                <!--end::Step 3-->
+
+                                                <!--begin::Step 4-->
+                                                <div class="stepper-item" data-kt-stepper-element="nav">
+                                                    <h3 class="stepper-title">
+                                                        Completed
+                                                    </h3>
+                                                </div>
+                                                <!--end::Step 4-->
+                                            </div>
+                                            <!--end::Nav-->
+
+                                            <!--begin::Form-->
+                                            <form
+                                                class="mx-auto mw-500px w-100 pt-15 pb-10 fv-plugins-bootstrap5 fv-plugins-framework"
+                                                novalidate="novalidate" id="kt_modal_offer_a_deal_form">
+                                                <!--begin::Type-->
+                                                <div class="current" data-kt-stepper-element="content">
+                                                    <!--begin::Wrapper-->
+                                                    <div class="w-100">
+                                                        <!--begin::Heading-->
+                                                        <div class="mb-13">
+                                                            <!--begin::Title-->
+                                                            <h2 class="mb-3">Deal Type</h2>
+                                                            <!--end::Title-->
+
+                                                            <!--begin::Description-->
+                                                            <div class="text-muted fw-semibold fs-5">
+                                                                If you need more info, please check out
+                                                                <a href="#" class="link-primary fw-bold">FAQ
+                                                                    Page</a>.
+                                                            </div>
+                                                            <!--end::Description-->
+                                                        </div>
+                                                        <!--end::Heading-->
+
                                                         <!--begin::Input group-->
-                                                        <div class="d-flex flex-column mb-7 fv-row">
-                                                            <!--begin::Label-->
+                                                        <div class="fv-row mb-15 fv-plugins-icon-container"
+                                                            data-kt-buttons="true" data-kt-initialized="1">
+                                                            <!--begin::Option-->
                                                             <label
-                                                                class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-                                                                <span class="required">Nama Kategori</span>
-                                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                                    data-bs-toggle="tooltip"
-                                                                    title="Masukkan nama kategori seperti contoh dibawah ini"></i>
+                                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6 mb-6 active">
+                                                                <!--begin::Input-->
+                                                                <input class="btn-check" type="radio"
+                                                                    checked="checked" name="offer_type"
+                                                                    value="1">
+                                                                <!--end::Input-->
+
+                                                                <!--begin::Label-->
+                                                                <span class="d-flex">
+                                                                    <!--begin::Icon-->
+                                                                    <!--begin::Svg Icon | path: icons/duotune/communication/com006.svg-->
+                                                                    <span class="svg-icon svg-icon-3hx"><svg
+                                                                            width="18" height="18"
+                                                                            viewBox="0 0 18 18" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path opacity="0.3"
+                                                                                d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z"
+                                                                                fill="currentColor"></path>
+                                                                            <path
+                                                                                d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z"
+                                                                                fill="currentColor"></path>
+                                                                            <rect x="7" y="6"
+                                                                                width="4" height="4"
+                                                                                rx="2" fill="currentColor">
+                                                                            </rect>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                    <!--end::Icon-->
+
+                                                                    <!--begin::Info-->
+                                                                    <span class="ms-4">
+                                                                        <span
+                                                                            class="fs-3 fw-bold text-gray-900 mb-2 d-block">Personal
+                                                                            Deal</span>
+
+                                                                        <span class="fw-semibold fs-4 text-muted">
+                                                                            If you need more info, please check it out
+                                                                        </span>
+                                                                    </span>
+                                                                    <!--end::Info-->
+                                                                </span>
+                                                                <!--end::Label-->
                                                             </label>
-                                                            <!--end::Label-->
-                                                            <input type="hidden" name="ikon" value="try">
-                                                            <input type="text"
-                                                                class="form-control form-control-solid"
-                                                                placeholder="Makanan Ringan" name="kategori"
-                                                                value="{{ $data->kategori }}" required />
-                                                            <div class="invalid-feedback">
-                                                                Harap isi bidang ini
+                                                            <!--end::Option-->
+
+                                                            <!--begin::Option-->
+                                                            <label
+                                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6">
+                                                                <!--begin::Input-->
+                                                                <input class="btn-check" type="radio"
+                                                                    name="offer_type" value="2">
+                                                                <!--end::Input-->
+
+                                                                <!--begin::Label-->
+                                                                <span class="d-flex">
+                                                                    <!--begin::Icon-->
+                                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
+                                                                    <span class="svg-icon svg-icon-3hx"><svg
+                                                                            width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect x="2" y="2"
+                                                                                width="9" height="9"
+                                                                                rx="2" fill="currentColor">
+                                                                            </rect>
+                                                                            <rect opacity="0.3" x="13"
+                                                                                y="2" width="9"
+                                                                                height="9" rx="2"
+                                                                                fill="currentColor"></rect>
+                                                                            <rect opacity="0.3" x="13"
+                                                                                y="13" width="9"
+                                                                                height="9" rx="2"
+                                                                                fill="currentColor"></rect>
+                                                                            <rect opacity="0.3" x="2"
+                                                                                y="13" width="9"
+                                                                                height="9" rx="2"
+                                                                                fill="currentColor"></rect>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                    <!--end::Icon-->
+
+                                                                    <!--begin::Info-->
+                                                                    <span class="ms-4">
+                                                                        <span
+                                                                            class="fs-3 fw-bold text-gray-900 mb-2 d-block">Corporate
+                                                                            Deal</span>
+
+                                                                        <span class="fw-semibold fs-4 text-muted">
+                                                                            Create corporate account to manage users
+                                                                        </span>
+                                                                    </span>
+                                                                    <!--end::Info-->
+                                                                </span>
+                                                                <!--end::Label-->
+                                                            </label>
+                                                            <!--end::Option-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
                                                             </div>
                                                         </div>
                                                         <!--end::Input group-->
-                                                        <!--begin::Actions-->
-                                                        <div class="text-center pt-15">
-                                                            <button type="reset" id="kt_modal_new_card_cancel"
-                                                                class="btn btn-light me-3">
-                                                                Batal
-                                                            </button>
 
-                                                            <button type="submit" id="kt_modal_new_card_submit"
-                                                                class="btn btn-primary">
+                                                        <!--begin::Actions-->
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-lg btn-primary"
+                                                                data-kt-element="type-next">
                                                                 <span class="indicator-label">
-                                                                    Kirim
+                                                                    Offer Details
                                                                 </span>
                                                                 <span class="indicator-progress">
                                                                     Please wait... <span
@@ -236,196 +410,561 @@
                                                             </button>
                                                         </div>
                                                         <!--end::Actions-->
-                                                    </form>
-                                                    <!--end::Form-->
+                                                    </div>
+                                                    <!--end::Wrapper-->
                                                 </div>
-                                                <!--end::Modal body-->
-                                            </div>
-                                            <!--end::Modal content-->
+                                                <!--end::Type-->
+                                                <!--begin::Details-->
+                                                <div data-kt-stepper-element="content">
+                                                    <!--begin::Wrapper-->
+                                                    <div class="w-100">
+                                                        <!--begin::Heading-->
+                                                        <div class="mb-13">
+                                                            <!--begin::Title-->
+                                                            <h2 class="mb-3">Deal Details</h2>
+                                                            <!--end::Title-->
+
+                                                            <!--begin::Description-->
+                                                            <div class="text-muted fw-semibold fs-5">
+                                                                If you need more info, please check out
+                                                                <a href="#" class="link-primary fw-bold">FAQ
+                                                                    Page</a>.
+                                                            </div>
+                                                            <!--end::Description-->
+                                                        </div>
+                                                        <!--end::Heading-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-8 fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <label
+                                                                class="required fs-6 fw-semibold mb-2">Customer</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <select
+                                                                class="form-select form-select-solid select2-hidden-accessible"
+                                                                data-control="select2"
+                                                                data-placeholder="Select an option"
+                                                                name="details_customer"
+                                                                data-select2-id="select2-data-10-i9uz" tabindex="-1"
+                                                                aria-hidden="true" data-kt-initialized="1">
+                                                                <option></option>
+                                                                <option value="1" selected=""
+                                                                    data-select2-id="select2-data-12-z96y">Keenthemes
+                                                                </option>
+                                                                <option value="2">CRM App</option>
+                                                            </select><span
+                                                                class="select2 select2-container select2-container--bootstrap5"
+                                                                dir="ltr" data-select2-id="select2-data-11-ja2l"
+                                                                style="width: 100%;"><span class="selection"><span
+                                                                        class="select2-selection select2-selection--single form-select form-select-solid"
+                                                                        role="combobox" aria-haspopup="true"
+                                                                        aria-expanded="false" tabindex="0"
+                                                                        aria-disabled="false"
+                                                                        aria-labelledby="select2-details_customer-2r-container"
+                                                                        aria-controls="select2-details_customer-2r-container"><span
+                                                                            class="select2-selection__rendered"
+                                                                            id="select2-details_customer-2r-container"
+                                                                            role="textbox" aria-readonly="true"
+                                                                            title="Keenthemes">Keenthemes</span><span
+                                                                            class="select2-selection__arrow"
+                                                                            role="presentation"><b
+                                                                                role="presentation"></b></span></span></span><span
+                                                                    class="dropdown-wrapper"
+                                                                    aria-hidden="true"></span></span>
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-8 fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <label class="required fs-6 fw-semibold mb-2">Deal
+                                                                Title</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <input type="text"
+                                                                class="form-control form-control-solid"
+                                                                placeholder="Enter Deal Title" name="details_title"
+                                                                value="Marketing Campaign">
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-8">
+                                                            <!--begin::Label-->
+                                                            <label class="fs-6 fw-semibold mb-2">Deal
+                                                                Description</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Label-->
+                                                            <textarea class="form-control form-control-solid" rows="3" placeholder="Enter Deal Description"
+                                                                name="details_description">            Experience share market at your fingertips with TICK PRO stock investment mobile trading app
+                                    </textarea>
+                                                            <!--end::Label-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-8 fv-plugins-icon-container">
+                                                            <label class="required fs-6 fw-semibold mb-2">Activation
+                                                                Date</label>
+                                                            <div class="position-relative d-flex align-items-center">
+                                                                <!--begin::Icon-->
+                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen014.svg-->
+                                                                <span
+                                                                    class="svg-icon svg-icon-2 position-absolute mx-4"><svg
+                                                                        width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path opacity="0.3"
+                                                                            d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z"
+                                                                            fill="currentColor"></path>
+                                                                        <path
+                                                                            d="M6 6C5.4 6 5 5.6 5 5V3C5 2.4 5.4 2 6 2C6.6 2 7 2.4 7 3V5C7 5.6 6.6 6 6 6ZM11 5V3C11 2.4 10.6 2 10 2C9.4 2 9 2.4 9 3V5C9 5.6 9.4 6 10 6C10.6 6 11 5.6 11 5ZM15 5V3C15 2.4 14.6 2 14 2C13.4 2 13 2.4 13 3V5C13 5.6 13.4 6 14 6C14.6 6 15 5.6 15 5ZM19 5V3C19 2.4 18.6 2 18 2C17.4 2 17 2.4 17 3V5C17 5.6 17.4 6 18 6C18.6 6 19 5.6 19 5Z"
+                                                                            fill="currentColor"></path>
+                                                                        <path
+                                                                            d="M8.8 13.1C9.2 13.1 9.5 13 9.7 12.8C9.9 12.6 10.1 12.3 10.1 11.9C10.1 11.6 10 11.3 9.8 11.1C9.6 10.9 9.3 10.8 9 10.8C8.8 10.8 8.59999 10.8 8.39999 10.9C8.19999 11 8.1 11.1 8 11.2C7.9 11.3 7.8 11.4 7.7 11.6C7.6 11.8 7.5 11.9 7.5 12.1C7.5 12.2 7.4 12.2 7.3 12.3C7.2 12.4 7.09999 12.4 6.89999 12.4C6.69999 12.4 6.6 12.3 6.5 12.2C6.4 12.1 6.3 11.9 6.3 11.7C6.3 11.5 6.4 11.3 6.5 11.1C6.6 10.9 6.8 10.7 7 10.5C7.2 10.3 7.49999 10.1 7.89999 10C8.29999 9.90003 8.60001 9.80003 9.10001 9.80003C9.50001 9.80003 9.80001 9.90003 10.1 10C10.4 10.1 10.7 10.3 10.9 10.4C11.1 10.5 11.3 10.8 11.4 11.1C11.5 11.4 11.6 11.6 11.6 11.9C11.6 12.3 11.5 12.6 11.3 12.9C11.1 13.2 10.9 13.5 10.6 13.7C10.9 13.9 11.2 14.1 11.4 14.3C11.6 14.5 11.8 14.7 11.9 15C12 15.3 12.1 15.5 12.1 15.8C12.1 16.2 12 16.5 11.9 16.8C11.8 17.1 11.5 17.4 11.3 17.7C11.1 18 10.7 18.2 10.3 18.3C9.9 18.4 9.5 18.5 9 18.5C8.5 18.5 8.1 18.4 7.7 18.2C7.3 18 7 17.8 6.8 17.6C6.6 17.4 6.4 17.1 6.3 16.8C6.2 16.5 6.10001 16.3 6.10001 16.1C6.10001 15.9 6.2 15.7 6.3 15.6C6.4 15.5 6.6 15.4 6.8 15.4C6.9 15.4 7.00001 15.4 7.10001 15.5C7.20001 15.6 7.3 15.6 7.3 15.7C7.5 16.2 7.7 16.6 8 16.9C8.3 17.2 8.6 17.3 9 17.3C9.2 17.3 9.5 17.2 9.7 17.1C9.9 17 10.1 16.8 10.3 16.6C10.5 16.4 10.5 16.1 10.5 15.8C10.5 15.3 10.4 15 10.1 14.7C9.80001 14.4 9.50001 14.3 9.10001 14.3C9.00001 14.3 8.9 14.3 8.7 14.3C8.5 14.3 8.39999 14.3 8.39999 14.3C8.19999 14.3 7.99999 14.2 7.89999 14.1C7.79999 14 7.7 13.8 7.7 13.7C7.7 13.5 7.79999 13.4 7.89999 13.2C7.99999 13 8.2 13 8.5 13H8.8V13.1ZM15.3 17.5V12.2C14.3 13 13.6 13.3 13.3 13.3C13.1 13.3 13 13.2 12.9 13.1C12.8 13 12.7 12.8 12.7 12.6C12.7 12.4 12.8 12.3 12.9 12.2C13 12.1 13.2 12 13.6 11.8C14.1 11.6 14.5 11.3 14.7 11.1C14.9 10.9 15.2 10.6 15.5 10.3C15.8 10 15.9 9.80003 15.9 9.70003C15.9 9.60003 16.1 9.60004 16.3 9.60004C16.5 9.60004 16.7 9.70003 16.8 9.80003C16.9 9.90003 17 10.2 17 10.5V17.2C17 18 16.7 18.4 16.2 18.4C16 18.4 15.8 18.3 15.6 18.2C15.4 18.1 15.3 17.8 15.3 17.5Z"
+                                                                            fill="currentColor"></path>
+                                                                    </svg>
+                                                                </span>
+                                                                <!--end::Svg Icon-->
+                                                                <!--end::Icon-->
+
+                                                                <!--begin::Datepicker-->
+                                                                <input
+                                                                    class="form-control form-control-solid ps-12 flatpickr-input"
+                                                                    placeholder="Pick date range"
+                                                                    name="details_activation_date" type="text"
+                                                                    readonly="readonly">
+                                                                <!--end::Datepicker-->
+                                                            </div>
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-15 fv-plugins-icon-container">
+                                                            <!--begin::Wrapper-->
+                                                            <div class="d-flex flex-stack">
+                                                                <!--begin::Label-->
+                                                                <div class="me-5">
+                                                                    <label
+                                                                        class="required fs-6 fw-semibold">Notifications</label>
+                                                                    <div class="fs-7 fw-semibold text-muted">Allow
+                                                                        Notifications by Phone or Email</div>
+                                                                </div>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Checkboxes-->
+                                                                <div class="d-flex">
+                                                                    <!--begin::Checkbox-->
+                                                                    <label
+                                                                        class="form-check form-check-custom form-check-solid me-10">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input h-20px w-20px"
+                                                                            type="checkbox" value="email"
+                                                                            name="details_notifications[]">
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <span class="form-check-label fw-semibold">
+                                                                            Email
+                                                                        </span>
+                                                                        <!--end::Label-->
+                                                                    </label>
+                                                                    <!--end::Checkbox-->
+
+                                                                    <!--begin::Checkbox-->
+                                                                    <label
+                                                                        class="form-check form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input h-20px w-20px"
+                                                                            type="checkbox" value="phone"
+                                                                            checked=""
+                                                                            name="details_notifications[]">
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <span class="form-check-label fw-semibold">
+                                                                            Phone
+                                                                        </span>
+                                                                        <!--end::Label-->
+                                                                    </label>
+                                                                    <!--end::Checkbox-->
+                                                                </div>
+                                                                <!--end::Checkboxes-->
+                                                            </div>
+                                                            <!--begin::Wrapper-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Actions-->
+                                                        <div class="d-flex flex-stack">
+                                                            <button type="button" class="btn btn-lg btn-light me-3"
+                                                                data-kt-element="details-previous">
+                                                                Deal Type
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-lg btn-primary"
+                                                                data-kt-element="details-next">
+                                                                <span class="indicator-label">
+                                                                    Financing
+                                                                </span>
+                                                                <span class="indicator-progress">
+                                                                    Please wait... <span
+                                                                        class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <!--end::Actions-->
+                                                    </div>
+                                                    <!--end::Wrapper-->
+                                                </div>
+                                                <!--end::Details-->
+                                                <!--begin::Budget-->
+                                                <div data-kt-stepper-element="content">
+                                                    <!--begin::Wrapper-->
+                                                    <div class="w-100">
+                                                        <!--begin::Heading-->
+                                                        <div class="mb-13">
+                                                            <!--begin::Title-->
+                                                            <h2 class="mb-3">Finance</h2>
+                                                            <!--end::Title-->
+
+                                                            <!--begin::Description-->
+                                                            <div class="text-muted fw-semibold fs-5">
+                                                                If you need more info, please check out
+                                                                <a href="#" class="link-primary fw-bold">FAQ
+                                                                    Page</a>.
+                                                            </div>
+                                                            <!--end::Description-->
+                                                        </div>
+                                                        <!--end::Heading-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-8 fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <label
+                                                                class="d-flex align-items-center fs-6 fw-semibold mb-2">
+                                                                <span class="required">Setup Budget</span>
+
+                                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
+                                                                    data-bs-toggle="popover" data-bs-trigger="hover"
+                                                                    data-bs-html="true"
+                                                                    data-bs-content="
+                                                <div class='p-4 rounded bg-light'>
+                                                    <div class='d-flex flex-stack text-muted mb-4'>
+                                                        <i class='fas fa-university fs-3 me-3'></i>
+
+                                                        <div class='fw-bold'>INCBANK **** 1245 STATEMENT</div>
+                                                    </div>
+
+                                                    <div class='d-flex flex-stack fw-semibold text-gray-600'>
+                                                        <div>Amount</div>
+                                                        <div>Transaction</div>
+                                                    </div>
+
+                                                    <div class='separator separator-dashed my-2'></div>
+
+                                                    <div class='d-flex flex-stack text-dark fw-bold mb-2'>
+                                                        <div>USD345.00</div>
+                                                        <div>KEENTHEMES*</div>
+                                                    </div>
+
+                                                    <div class='d-flex flex-stack text-muted mb-2'>
+                                                        <div>USD75.00</div>
+                                                        <div>Hosting fee</div>
+                                                    </div>
+
+                                                    <div class='d-flex flex-stack text-muted'>
+                                                        <div>USD3,950.00</div>
+                                                        <div>Payrol</div>
+                                                    </div>
+                                                </div>
+                                            "
+                                                                    data-kt-initialized="1">
+                                                                </i>
+                                                            </label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Dialer-->
+                                                            <div class="position-relative w-lg-250px"
+                                                                id="kt_modal_finance_setup" data-kt-dialer="true"
+                                                                data-kt-dialer-min="50" data-kt-dialer-max="50000"
+                                                                data-kt-dialer-step="100" data-kt-dialer-prefix="$"
+                                                                data-kt-dialer-decimals="2">
+
+                                                                <!--begin::Decrease control-->
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 start-0"
+                                                                    data-kt-dialer-control="decrease">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen042.svg-->
+                                                                    <span class="svg-icon svg-icon-1"><svg
+                                                                            width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect opacity="0.3" x="2"
+                                                                                y="2" width="20"
+                                                                                height="20" rx="10"
+                                                                                fill="currentColor"></rect>
+                                                                            <rect x="6.01041" y="10.9247"
+                                                                                width="12" height="2"
+                                                                                rx="1" fill="currentColor">
+                                                                            </rect>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                                <!--end::Decrease control-->
+
+                                                                <!--begin::Input control-->
+                                                                <input type="text"
+                                                                    class="form-control form-control-solid border-0 ps-12"
+                                                                    data-kt-dialer-control="input"
+                                                                    placeholder="Amount" name="finance_setup"
+                                                                    readonly="" value="$50">
+                                                                <!--end::Input control-->
+
+                                                                <!--begin::Increase control-->
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-active-color-gray-700 position-absolute translate-middle-y top-50 end-0"
+                                                                    data-kt-dialer-control="increase">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen041.svg-->
+                                                                    <span class="svg-icon svg-icon-1"><svg
+                                                                            width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect opacity="0.3" x="2"
+                                                                                y="2" width="20"
+                                                                                height="20" rx="10"
+                                                                                fill="currentColor"></rect>
+                                                                            <rect x="10.8891" y="17.8033"
+                                                                                width="12" height="2"
+                                                                                rx="1"
+                                                                                transform="rotate(-90 10.8891 17.8033)"
+                                                                                fill="currentColor"></rect>
+                                                                            <rect x="6.01041" y="10.9247"
+                                                                                width="12" height="2"
+                                                                                rx="1" fill="currentColor">
+                                                                            </rect>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                                <!--end::Increase control-->
+                                                            </div>
+                                                            <!--end::Dialer-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-8 fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <label class="fs-6 fw-semibold mb-2">Budget Usage</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Row-->
+                                                            <div class="row g-9" data-kt-buttons="true"
+                                                                data-kt-buttons-target="[data-kt-button='true']"
+                                                                data-kt-initialized="1">
+                                                                <!--begin::Col-->
+                                                                <div class="col-md-6 col-lg-12 col-xxl-6">
+                                                                    <!--begin::Option-->
+                                                                    <label
+                                                                        class="btn btn-outline btn-outline-dashed btn-active-light-primary active d-flex text-start p-6"
+                                                                        data-kt-button="true">
+                                                                        <!--begin::Radio-->
+                                                                        <span
+                                                                            class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                            <input class="form-check-input"
+                                                                                type="radio" name="finance_usage"
+                                                                                value="1" checked="checked">
+                                                                        </span>
+                                                                        <!--end::Radio-->
+
+                                                                        <!--begin::Info-->
+                                                                        <span class="ms-5">
+                                                                            <span
+                                                                                class="fs-4 fw-bold text-gray-800 mb-2 d-block">Precise
+                                                                                Usage</span>
+
+                                                                            <span
+                                                                                class="fw-semibold fs-7 text-gray-600">
+                                                                                Withdraw money to your bank account per
+                                                                                transaction under $50,000 budget
+                                                                            </span>
+                                                                        </span>
+                                                                        <!--end::Info-->
+                                                                    </label>
+                                                                    <!--end::Option-->
+                                                                    <div
+                                                                        class="fv-plugins-message-container invalid-feedback">
+                                                                    </div>
+                                                                </div>
+                                                                <!--end::Col-->
+
+                                                                <!--begin::Col-->
+                                                                <div class="col-md-6 col-lg-12 col-xxl-6">
+                                                                    <!--begin::Option-->
+                                                                    <label
+                                                                        class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6"
+                                                                        data-kt-button="true">
+                                                                        <!--begin::Radio-->
+                                                                        <span
+                                                                            class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                            <input class="form-check-input"
+                                                                                type="radio" name="finance_usage"
+                                                                                value="2">
+                                                                        </span>
+                                                                        <!--end::Radio-->
+
+                                                                        <!--begin::Info-->
+                                                                        <span class="ms-5">
+                                                                            <span
+                                                                                class="fs-4 fw-bold text-gray-800 mb-2 d-block">Extreme
+                                                                                Usage</span>
+                                                                            <span
+                                                                                class="fw-semibold fs-7 text-gray-600">
+                                                                                Withdraw money to your bank account per
+                                                                                transaction under $50,000 budget
+                                                                            </span>
+                                                                        </span>
+                                                                        <!--end::Info-->
+                                                                    </label>
+                                                                    <!--end::Option-->
+                                                                </div>
+                                                                <!--end::Col-->
+                                                            </div>
+                                                            <!--end::Row-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-15 fv-plugins-icon-container">
+                                                            <!--begin::Wrapper-->
+                                                            <div class="d-flex flex-stack">
+                                                                <!--begin::Label-->
+                                                                <div class="me-5">
+                                                                    <label class="fs-6 fw-semibold">Allow Changes in
+                                                                        Budget</label>
+                                                                    <div class="fs-7 fw-semibold text-muted">If you
+                                                                        need more info, please check budget planning
+                                                                    </div>
+                                                                </div>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Switch-->
+                                                                <label
+                                                                    class="form-check form-switch form-check-custom form-check-solid">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1" name="finance_allow"
+                                                                        checked="checked">
+                                                                    <span
+                                                                        class="form-check-label fw-semibold text-muted">
+                                                                        Allowed
+                                                                    </span>
+                                                                </label>
+                                                                <!--end::Switch-->
+                                                            </div>
+                                                            <!--end::Wrapper-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Actions-->
+                                                        <div class="d-flex flex-stack">
+                                                            <button type="button" class="btn btn-lg btn-light me-3"
+                                                                data-kt-element="finance-previous">
+                                                                Project Settings
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-lg btn-primary"
+                                                                data-kt-element="finance-next">
+                                                                <span class="indicator-label">
+                                                                    Build Team
+                                                                </span>
+                                                                <span class="indicator-progress">
+                                                                    Please wait... <span
+                                                                        class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <!--end::Actions-->
+                                                    </div>
+                                                    <!--end::Wrapper-->
+                                                </div>
+                                                <!--end::Budget-->
+                                                <!--begin::Complete-->
+                                                <div data-kt-stepper-element="content">
+                                                    <!--begin::Wrapper-->
+                                                    <div class="w-100">
+                                                        <!--begin::Heading-->
+                                                        <div class="mb-13">
+                                                            <!--begin::Title-->
+                                                            <h2 class="mb-3">Deal Created!</h2>
+                                                            <!--end::Title-->
+
+                                                            <!--begin::Description-->
+                                                            <div class="text-muted fw-semibold fs-5">
+                                                                If you need more info, please check out
+                                                                <a href="#" class="link-primary fw-bold">FAQ
+                                                                    Page</a>.
+                                                            </div>
+                                                            <!--end::Description-->
+                                                        </div>
+                                                        <!--end::Heading-->
+
+                                                        <!--begin::Actions-->
+                                                        <div class="d-flex flex-center pb-20">
+                                                            <button type="button" class="btn btn-lg btn-light me-3"
+                                                                data-kt-element="complete-start">
+                                                                Create New Deal
+                                                            </button>
+
+                                                            <a href="#" class="btn btn-lg btn-primary"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-original-title="Coming Soon"
+                                                                data-kt-initialized="1">
+                                                                View Deal
+                                                            </a>
+                                                        </div>
+                                                        <!--end::Actions-->
+
+                                                        <!--begin::Illustration-->
+                                                        <div class="text-center px-4">
+                                                            <img src="../../assets/media/illustrations/sketchy-1/20.png"
+                                                                alt="" class="mw-100 mh-300px">
+                                                        </div>
+                                                        <!--end::Illustration-->
+                                                    </div>
+                                                </div>
+                                                <!--end::Complete-->
+                                            </form>
+                                            <!--end::Form-->
                                         </div>
-                                        <!--end::Modal dialog-->
+                                        <!--end::Stepper-->
                                     </div>
-                                    <!--end::Modal - New Card-->
-                                @endforeach
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center mb-7">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-success">
-                                            <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-success"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.3"
-                                                        d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex align-items-center w-100">
-                                        <div class="p-2">
-                                            <a href="#"
-                                                class="text-dark text-hover-primary fs-6 fw-bold">Makanan
-                                                Ringan</a>
-                                        </div>
-                                        <div class="p-2 ms-auto">
-                                            <a href="#" class="btn btn-sm btn-light btn-active-light-primary">
-                                                Edit</a>
-                                            <a href="#" class="btn btn-sm btn-light btn-active-light-primary">
-                                                Delete</a>
-                                        </div>
-                                        {{-- <span class="text-muted fw-bold">Project Manager</span> --}}
-                                    </div>
-                                    <!--end::Text-->
+                                    <!--begin::Modal body-->
                                 </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center mb-7">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-warning">
-                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-warning"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.3"
-                                                        d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">Concept
-                                            Design</a>
-
-                                        <span class="text-muted fw-bold">Art Director</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center mb-7">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-primary">
-                                            <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-primary"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.3"
-                                                        d="M20 3H4C2.89543 3 2 3.89543 2 5V16C2 17.1046 2.89543 18 4 18H4.5C5.05228 18 5.5 18.4477 5.5 19V21.5052C5.5 22.1441 6.21212 22.5253 6.74376 22.1708L11.4885 19.0077C12.4741 18.3506 13.6321 18 14.8167 18H20C21.1046 18 22 17.1046 22 16V5C22 3.89543 21.1046 3 20 3Z"
-                                                        fill="currentColor" />
-                                                    <rect x="6" y="12" width="7"
-                                                        height="2" rx="1" fill="currentColor" />
-                                                    <rect x="6" y="7" width="12"
-                                                        height="2" rx="1" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">Functional
-                                            Logics</a>
-
-                                        <span class="text-muted fw-bold">Lead Developer</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center mb-7">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-danger">
-                                            <!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-danger"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z"
-                                                        fill="currentColor" />
-                                                    <path opacity="0.3"
-                                                        d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#"
-                                            class="text-dark text-hover-primary fs-6 fw-bold">Development</a>
-
-                                        <span class="text-muted fw-bold">DevOps</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center ">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-info">
-                                            <!--begin::Svg Icon | path: icons/duotune/general/gen049.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-info"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.3"
-                                                        d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M12.0006 11.1542C13.1434 11.1542 14.0777 10.22 14.0777 9.0771C14.0777 7.93424 13.1434 7 12.0006 7C10.8577 7 9.92348 7.93424 9.92348 9.0771C9.92348 10.22 10.8577 11.1542 12.0006 11.1542Z"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M15.5652 13.814C15.5108 13.6779 15.4382 13.551 15.3566 13.4331C14.9393 12.8163 14.2954 12.4081 13.5697 12.3083C13.479 12.2993 13.3793 12.3174 13.3067 12.3718C12.9257 12.653 12.4722 12.7981 12.0006 12.7981C11.5289 12.7981 11.0754 12.653 10.6944 12.3718C10.6219 12.3174 10.5221 12.2902 10.4314 12.3083C9.70578 12.4081 9.05272 12.8163 8.64456 13.4331C8.56293 13.551 8.49036 13.687 8.43595 13.814C8.40875 13.8684 8.41781 13.9319 8.44502 13.9864C8.51759 14.1133 8.60828 14.2403 8.68991 14.3492C8.81689 14.5215 8.95295 14.6757 9.10715 14.8208C9.23413 14.9478 9.37925 15.0657 9.52439 15.1836C10.2409 15.7188 11.1026 15.9999 11.9915 15.9999C12.8804 15.9999 13.7421 15.7188 14.4586 15.1836C14.6038 15.0748 14.7489 14.9478 14.8759 14.8208C15.021 14.6757 15.1661 14.5215 15.2931 14.3492C15.3838 14.2312 15.4655 14.1133 15.538 13.9864C15.5833 13.9319 15.5924 13.8684 15.5652 13.814Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#"
-                                            class="text-dark text-hover-primary fs-6 fw-bold">Testing</a>
-
-                                        <span class="text-muted fw-bold">QA Managers</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-
                             </div>
-                            <!--end::Body-->
                         </div>
-                        <!--end::Card-->
+                        <!--end::Modal - Offer A Deal-->
+                        <!--end::Modals-->
                     </div>
-                    <!--end::Post-->
                 </div>
                 <!--end::Container-->
 
@@ -1496,7 +2035,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                    <a href="#"
+                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
                                         Cox</a>
                                     <span class="text-muted fs-7 mb-1">1 Hour</span>
                                 </div>
@@ -1558,7 +2098,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                    <a href="#"
+                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
                                         Cox</a>
                                     <span class="text-muted fs-7 mb-1">3 Hours</span>
                                 </div>
@@ -1621,7 +2162,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                    <a href="#"
+                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
                                         Cox</a>
                                     <span class="text-muted fs-7 mb-1">5 Hours</span>
                                 </div>
@@ -1684,7 +2226,8 @@
                                 <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
-                                    <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
+                                    <a href="#"
+                                        class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian
                                         Cox</a>
                                     <span class="text-muted fs-7 mb-1">Just now</span>
                                 </div>
@@ -1724,7 +2267,8 @@
                             data-bs-toggle="tooltip" title="Coming soon"><i
                                 class="bi bi-paperclip fs-3"></i></button>
                         <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button"
-                            data-bs-toggle="tooltip" title="Coming soon"><i class="bi bi-upload fs-3"></i></button>
+                            data-bs-toggle="tooltip" title="Coming soon"><i
+                                class="bi bi-upload fs-3"></i></button>
                     </div>
                     <!--end::Actions-->
 
@@ -1744,7 +2288,8 @@
     <div id="kt_shopping_cart" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="cart"
         data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
         data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_drawer_shopping_cart_toggle" data-kt-drawer-close="#kt_drawer_shopping_cart_close">
+        data-kt-drawer-toggle="#kt_drawer_shopping_cart_toggle"
+        data-kt-drawer-close="#kt_drawer_shopping_cart_close">
 
         <!--begin::Messenger-->
         <div class="card card-flush w-100 rounded-0">
@@ -1761,10 +2306,11 @@
                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
                         <span class="svg-icon svg-icon-2"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
-                                    rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
-                                <rect x="7.41422" y="6" width="16" height="2" rx="1"
-                                    transform="rotate(45 7.41422 6)" fill="currentColor" />
+                                <rect opacity="0.5" x="6" y="17.3137" width="16"
+                                    height="2" rx="1" transform="rotate(-45 6 17.3137)"
+                                    fill="currentColor" />
+                                <rect x="7.41422" y="6" width="16" height="2"
+                                    rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
                             </svg>
 
                         </span>
@@ -9420,7 +9966,7 @@
                 <!--begin::Modal header-->
                 <div class="modal-header">
                     <!--begin::Modal title-->
-                    <h2>Tambah Kategori</h2>
+                    <h2>Tambah Menu Makanan</h2>
                     <!--end::Modal title-->
 
                     <!--begin::Close-->
@@ -9446,22 +9992,119 @@
                 <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
                     <!--begin::Form-->
                     <form id="kt_modal_new_card_form" class="form needs-validation" method="POST"
-                        action="/kategoripost" novalidate="novalidate">
+                        action="/menu-makananpost" novalidate="novalidate">
                         @csrf
                         <!--begin::Input group-->
-                        <div class="d-flex flex-column mb-7 fv-row">
+                        <div class="d-flex flex-column mb-0 fv-row">
                             <!--begin::Label-->
                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-                                <span class="required">Nama Kategori</span>
-                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                    title="Masukkan nama kategori seperti contoh dibawah ini"></i>
+                                <span class="required">Foto Makanan</span>
+                                {{-- <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                    title="Masukkan nama kategori seperti contoh dibawah ini"></i> --}}
                             </label>
                             <!--end::Label-->
-                            <input type="hidden" name="ikon" value="try">
-                            <input type="text" class="form-control form-control-solid"
-                                placeholder="Makanan Ringan" name="kategori" value="" required />
-                            <div class="invalid-feedback">
-                                Harap isi bidang ini
+                            <!--begin::Image input-->
+                            <div class="image-input image-input-empty w-fc image-input-outline image-input-placeholder mb-4" data-kt-image-input="true">
+                                <!--begin::Image preview wrapper-->
+                                <div class="image-input-wrapper w-125px h-125px"></div>
+                                <!--end::Image preview wrapper-->
+
+                                <!--begin::Edit button-->
+                                <label
+                                    class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="change" data-bs-toggle="tooltip"
+                                    data-bs-dismiss="click" title="Change avatar">
+                                    <i class="bi bi-pencil-fill fs-7"></i>
+
+                                    <!--begin::Inputs-->
+                                    <input id="img_input" type="file" name="foto_makanan" accept=".png, .jpg, .jpeg"
+                                        required />
+                                    <div class="invalid-feedback">
+                                        Harap isi bidang ini
+                                    </div>
+                                    <input type="hidden" name="foto_makanan_remove" />
+                                    <!--end::Inputs-->
+                                </label>
+                                <!--end::Edit button-->
+
+                                <!--begin::Cancel button-->
+                                <span
+                                    class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="cancel" data-bs-toggle="tooltip"
+                                    data-bs-dismiss="click" title="Cancel avatar">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <!--end::Cancel button-->
+
+                                <!--begin::Remove button-->
+                                <span
+                                    class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="remove" data-bs-toggle="tooltip"
+                                    data-bs-dismiss="click" title="Remove avatar">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <!--end::Remove button-->
+                            </div>
+                            <!--end::Image input-->
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+                                <span class="required">Nama Makanan</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                    title="Masukkan Nama Makanan seperti contoh dibawah ini"></i>
+                            </label>
+                            <!--end::Label-->
+                            <div class="input-group mb-5">
+                                <input type="text" class="form-control form-control-solid"
+                                    placeholder="Cimol syntax" name="nama_makanan" value="" required />
+                                <div class="invalid-feedback">
+                                    Harap isi bidang ini
+                                </div>
+                            </div>
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+                                <span class="required">Harga</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                    title="Masukkan Nama Makanan seperti contoh dibawah ini"></i>
+                            </label>
+                            <!--end::Label-->
+                            <div class="input-group mb-5">
+                                <span class="input-group-text border-0">Rp.</span>
+                                <input type="text" id="harga_makanan" class="form-control form-control-solid"
+                                    placeholder="10.000" name="nama_makanan" value="" required />
+                                <div class="invalid-feedback">
+                                    Harap isi bidang ini
+                                </div>
+                            </div>
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+                                <span class="required">Kategori</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                    title="Masukkan Nama Makanan seperti contoh dibawah ini"></i>
+                            </label>
+                            <!--end::Label-->
+                            <div class="input-group mb-5">
+                                <select class="form-select form-select-solid" data-control="select2"
+                                    data-hide-search="true" data-placeholder="Pilih Kategori Makanan"
+                                    name="kategori_id">
+                                    <option value="">Select user...</option>
+                                    <option value="1">Makanan Ringan</option>
+                                    <option value="2">Makanan Berat</option>
+                                </select>
+                            </div>
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+                                <span class="required">Stock Makanan</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                    title="Masukkan Nama Makanan seperti contoh dibawah ini"></i>
+                            </label>
+                            <!--end::Label-->
+                            <div class="input-group mb-5">
+                                <span class="input-group-text border-0">Stock : </span>
+                                <input type="number" id="harga_makanan" class="form-control form-control-solid"
+                                    placeholder="10.000" name="stock" value="" required />
+                                <div class="invalid-feedback">
+                                    Harap isi bidang ini
+                                </div>
                             </div>
                         </div>
                         <!--end::Input group-->
@@ -9470,7 +10113,6 @@
                             <button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">
                                 Batal
                             </button>
-
                             <button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
                                 <span class="indicator-label">
                                     Kirim
@@ -10505,6 +11147,31 @@
     <!--begin::Javascript-->
     @include('layouts.script')
     <script>
+        // input image
+        KTImageInput.createInstances();
+        var imageInputElement = document.querySelector("#img_input");
+        var imageInput = KTImageInput.getInstance(imageInputElement);
+        /* Tanpa Rupiah */
+        var currency = document.getElementById('harga_makanan');
+        currency.addEventListener('keyup', function(e) {
+            currency.value = formatRupiah(this.value);
+        });
+        /* Fungsi */
+        function formatRupiah(angka, prefix) {
+            var number_string = angka.replace(/[^,\d]/g, '').toString(),
+                split = number_string.split(','),
+                sisa = split[0].length % 3,
+                rupiah = split[0].substr(0, sisa),
+                ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+            if (ribuan) {
+                separator = sisa ? '.' : '';
+                rupiah += separator + ribuan.join('.');
+            }
+
+            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+            return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+        }
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
             'use strict'
