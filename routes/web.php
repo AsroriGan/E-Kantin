@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\categoricontroller;
 use App\Http\Controllers\MenumakananController;
+use App\Http\Controllers\MenuminumanController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -17,6 +18,7 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
+Route::view('/zep', 'zep');
 Route::get('/', function () {
     return view('landinguser.home.index');
 });
@@ -30,6 +32,11 @@ Route::get('/kategoridestroy/{id}',[categoricontroller::class, 'destroy']);
 //menu makanan
 Route::get('/menu-makanan',[MenumakananController::class,"index"]);
 Route::post('/menu-makananpost',[MenumakananController::class,"post"]);
+Route::post('/menu-makananedit/{id}',[MenumakananController::class,"edit"]);
+Route::get('/menu-makanandelete/{id}',[MenumakananController::class,"destroy"]);
+//menu minuman
+Route::get('/menu-minuman',[MenuminumanController::class,"index"]);
+
 //Profile
 Route::get('/profile',[ProfileController::class, 'profile']);
 

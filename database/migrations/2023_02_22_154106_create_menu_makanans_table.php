@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string("nama_makanan");
             $table->bigInteger("harga");
             $table->foreignId("kategori_id");
+            $table->string("status");
             $table->integer("stock");
             $table->timestamps();
         });
