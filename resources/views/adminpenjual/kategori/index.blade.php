@@ -273,8 +273,7 @@
                                     <div class="d-flex align-items-center w-100">
                                         <div class="p-2">
                                             <a href="#"
-                                                class="text-dark text-hover-primary fs-6 fw-bold">Makanan
-                                                Ringan</a>
+                                                class="text-dark text-hover-primary fs-6 fw-bold">Example UI</a>
                                         </div>
                                         <div class="p-2 ms-auto">
                                             <a href="#" class="btn btn-sm btn-light btn-active-light-primary">
@@ -319,107 +318,6 @@
                                     <!--end::Text-->
                                 </div>
                                 <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center mb-7">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-primary">
-                                            <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-primary"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.3"
-                                                        d="M20 3H4C2.89543 3 2 3.89543 2 5V16C2 17.1046 2.89543 18 4 18H4.5C5.05228 18 5.5 18.4477 5.5 19V21.5052C5.5 22.1441 6.21212 22.5253 6.74376 22.1708L11.4885 19.0077C12.4741 18.3506 13.6321 18 14.8167 18H20C21.1046 18 22 17.1046 22 16V5C22 3.89543 21.1046 3 20 3Z"
-                                                        fill="currentColor" />
-                                                    <rect x="6" y="12" width="7"
-                                                        height="2" rx="1" fill="currentColor" />
-                                                    <rect x="6" y="7" width="12"
-                                                        height="2" rx="1" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#" class="text-dark text-hover-primary fs-6 fw-bold">Functional
-                                            Logics</a>
-
-                                        <span class="text-muted fw-bold">Lead Developer</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center mb-7">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-danger">
-                                            <!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-danger"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z"
-                                                        fill="currentColor" />
-                                                    <path opacity="0.3"
-                                                        d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#"
-                                            class="text-dark text-hover-primary fs-6 fw-bold">Development</a>
-
-                                        <span class="text-muted fw-bold">DevOps</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <div class="d-flex align-items-center ">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-50px me-5">
-                                        <span class="symbol-label bg-light-info">
-                                            <!--begin::Svg Icon | path: icons/duotune/general/gen049.svg-->
-                                            <span class="svg-icon svg-icon-2x svg-icon-info"><svg width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.3"
-                                                        d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M12.0006 11.1542C13.1434 11.1542 14.0777 10.22 14.0777 9.0771C14.0777 7.93424 13.1434 7 12.0006 7C10.8577 7 9.92348 7.93424 9.92348 9.0771C9.92348 10.22 10.8577 11.1542 12.0006 11.1542Z"
-                                                        fill="currentColor" />
-                                                    <path
-                                                        d="M15.5652 13.814C15.5108 13.6779 15.4382 13.551 15.3566 13.4331C14.9393 12.8163 14.2954 12.4081 13.5697 12.3083C13.479 12.2993 13.3793 12.3174 13.3067 12.3718C12.9257 12.653 12.4722 12.7981 12.0006 12.7981C11.5289 12.7981 11.0754 12.653 10.6944 12.3718C10.6219 12.3174 10.5221 12.2902 10.4314 12.3083C9.70578 12.4081 9.05272 12.8163 8.64456 13.4331C8.56293 13.551 8.49036 13.687 8.43595 13.814C8.40875 13.8684 8.41781 13.9319 8.44502 13.9864C8.51759 14.1133 8.60828 14.2403 8.68991 14.3492C8.81689 14.5215 8.95295 14.6757 9.10715 14.8208C9.23413 14.9478 9.37925 15.0657 9.52439 15.1836C10.2409 15.7188 11.1026 15.9999 11.9915 15.9999C12.8804 15.9999 13.7421 15.7188 14.4586 15.1836C14.6038 15.0748 14.7489 14.9478 14.8759 14.8208C15.021 14.6757 15.1661 14.5215 15.2931 14.3492C15.3838 14.2312 15.4655 14.1133 15.538 13.9864C15.5833 13.9319 15.5924 13.8684 15.5652 13.814Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </span>
-                                    </div>
-                                    <!--end::Symbol-->
-
-                                    <!--begin::Text-->
-                                    <div class="d-flex flex-column">
-                                        <a href="#"
-                                            class="text-dark text-hover-primary fs-6 fw-bold">Testing</a>
-
-                                        <span class="text-muted fw-bold">QA Managers</span>
-                                    </div>
-                                    <!--end::Text-->
-                                </div>
-                                <!--end::Item-->
-
                             </div>
                             <!--end::Body-->
                         </div>

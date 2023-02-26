@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\categoricontroller;
-use App\Http\Controllers\MenumakananController;
-use App\Http\Controllers\MenuminumanController;
+use App\Http\Controllers\PenjualControllers\categoricontroller;
+use App\Http\Controllers\PenjualControllers\MenumakananController;
+use App\Http\Controllers\PenjualControllers\MenuminumanController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -36,7 +36,9 @@ Route::post('/menu-makananedit/{id}',[MenumakananController::class,"edit"]);
 Route::get('/menu-makanandelete/{id}',[MenumakananController::class,"destroy"]);
 //menu minuman
 Route::get('/menu-minuman',[MenuminumanController::class,"index"]);
-
+Route::post('/menu-minumanpost',[MenuminumanController::class,"post"]);
+Route::post('/menu-minumanedit/{id}',[MenuminumanController::class,"edit"]);
+Route::get('/menu-minumandelete/{id}',[MenuminumanController::class,"destroy"]);
 //Profile
 Route::get('/profile',[ProfileController::class, 'profile']);
 

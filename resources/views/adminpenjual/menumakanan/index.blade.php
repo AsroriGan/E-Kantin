@@ -93,7 +93,7 @@
 											<div class="desc-food w-100">
 												<div class="fs-1 fw-bold mb-2 ms-3">{{ $data->nama_makanan }}</div>
 												<label class="fs-4 ms-3 fw-semibold text-hover-primary text-gray-600 m-0">Rp.{{ number_format($data->harga, 0, ',', '.') }}</label>
-												<div class="fw-semibold text-gray-400 ms-3"> Makanan Berat {{ $data->kategori }}</div>
+												<div class="fw-semibold text-gray-400 ms-3">{{ $data->to_kategori->kategori }}</div>
 												<div class="fw-semibold text-gray-400 ms-3"> Tersedia : {{ $data->stock }}</div>
 											</div>
 										</div>
@@ -103,7 +103,7 @@
 											{{-- <span class="text-gray-400 fs-7">Impressions</span> --}}
 											<div class="action">
 												<a class="badge badge-primary cur-p" data-bs-toggle="modal" data-bs-target="#modaledit{{ $data->id }}">Edit</a>
-												<a class="badge badge-danger cur-p" href="/menu-makanandelete/{{ $data->id }}">Hapus</a>
+												<a class="badge badge-danger cur-p delete" href="#" data-id="{{$data->id}}" data-name="{{$data->nama_makanan}}">Hapus</a>
 											</div>
 										</div>
 										<!--end::Card body-->
@@ -157,7 +157,7 @@
 															<div class="image-input-wrapper w-125px h-125px" style="background-image: url('{{ asset('images/foodimg/' . $data->foto_makanan) }}')"></div>
 															<!--end::Image preview wrapper-->
 															<!--begin::Edit button-->
-															<label class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Change avatar">
+															<label class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Masukkan foto makanan disini">
 																<i class="bi bi-pencil-fill fs-7"></i>
 																<!--begin::Inputs-->
 																<input id="img_input" type="file" name="foto_makanan" accept=".png, .jpg, .jpeg" />
@@ -207,8 +207,9 @@
 														<div class="input-group mb-5">
 															<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Pilih Kategori Makanan" name="kategori_id">
 																<option value="">Select user...</option>
-																<option value="1" selected>Makanan Ringan</option>
-																<option value="2">Makanan Berat</option>
+                                                                @foreach ($kategori as $kategoriedit)
+																<option value="{{$kategoriedit->id}}">{{$kategoriedit->kategori}}</option>
+                                                                @endforeach
 															</select>
 														</div>
 														<!--begin::Label-->
@@ -261,7 +262,7 @@
 										</div>
 										<div class="d-flex align-items-center fw-semibold">
 											{{-- <span class="badge bg-light text-gray-700 px-3 py-2 me-2">40%</span> --}}
-											<div class="badge badge-light-danger px-3 py-2 me-2">Tidak tersedia</div>
+											<div class="badge badge-light-success px-3 py-2 me-2">Tersedia</div>
 											{{-- <span class="text-gray-400 fs-7">Impressions</span> --}}
 											<div class="action">
 												<span class="badge badge-primary">Edit</span>
@@ -6060,7 +6061,7 @@
 									<div class="image-input-wrapper w-125px h-125px"></div>
 									<!--end::Image preview wrapper-->
 									<!--begin::Edit button-->
-									<label class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Change avatar">
+									<label class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Masukkan foto makanan disini">
 										<i class="bi bi-pencil-fill fs-7"></i>
 										<!--begin::Inputs-->
 										<input id="img_input" type="file" name="foto_makanan" accept=".png, .jpg, .jpeg" required />
@@ -6110,9 +6111,10 @@
 								<!--end::Label-->
 								<div class="input-group mb-5">
 									<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Pilih Kategori Makanan" name="kategori_id">
-										<option value="">Select user...</option>
-										<option value="1">Makanan Ringan</option>
-										<option value="2">Makanan Berat</option>
+										<option value="">Pilih Kategori Makanan...</option>
+                                        @foreach ($kategori as $kategori)
+										<option value="{{$kategori->id}}">{{$kategori->kategori}}</option>
+                                        @endforeach
 									</select>
 								</div>
 								<!--begin::Label-->
@@ -6920,7 +6922,36 @@
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Users Search-->
-		<!--begin::Javascript--> @include('layouts.script') <script>
+		<!--begin::Javascript-->
+        @include('layouts.script')
+        <script>
+        // Sweet Alert
+            $(".delete").click(function(e) {
+            e.preventDefault();
+            var id = $(this).attr('data-id');
+            var name = $(this).attr('data-name');
+            Swal.fire({
+                title: 'Apakah kamu yakin?',
+                text: "Anda tidak akan dapat mengembalikan ini!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, hapus!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location = '/menu-makanandelete/' + id;
+                    // alert(id);
+                    Swal.fire(
+                        'Dihapus!',
+                        'Daftar makanan Anda telah dihapus.',
+                        'success'
+                    )
+                }
+            })
+        });
+        //end Sweet alert
 			// input image
 			KTImageInput.createInstances();
 			var imageInputElement = document.querySelector("#img_input");

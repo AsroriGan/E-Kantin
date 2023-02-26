@@ -11,4 +11,8 @@ class kategori extends Model
     protected $table = "kategori";
     protected $guarded = [];
     protected $primaryKey = "id";
+
+    public function from_menu_makanan(){
+        return $this->hasMany(menu_makanan::class);
+    }
 }
