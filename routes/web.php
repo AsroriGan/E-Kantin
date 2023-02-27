@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\categoricontroller;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\categoricontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,13 @@ Route::get('/', function () {
 Route::get('/beranda',[BerandaController::class, 'beranda']);
 Route::get('/kategori',[categoricontroller::class, 'index']);
 
-//Profile 
+//Profile
 Route::get('/profile',[ProfileController::class, 'profile']);
+
+
+///login
+Route::get('/login',[LoginController::class, 'login']);
+Route::get('/register',[LoginController::class, 'register']);
+Route::post('/postlogin',[LoginController::class, 'postlogin']);
+Route::post('/postregister',[LoginController::class, 'postregister']);
 
