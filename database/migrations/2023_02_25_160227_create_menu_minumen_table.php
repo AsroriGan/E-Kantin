@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string("foto_minuman");
             $table->string("nama_minuman");
             $table->bigInteger("harga");
-            $table->integer("stock");
             $table->string("status");
             $table->timestamps();
         });

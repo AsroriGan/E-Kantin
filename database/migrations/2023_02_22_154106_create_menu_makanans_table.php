@@ -18,7 +18,6 @@ return new class extends Migration
             $table->bigInteger("harga");
             $table->foreignId("kategori_id");
             $table->string("status");
-            $table->integer("stock");
             $table->timestamps();
         });
     }
