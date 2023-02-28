@@ -29,8 +29,7 @@ class MenumakananController extends Controller
             "nama_makanan" => $request->nama_makanan,
             "harga" => str_replace('.', '', $request->harga),
             "kategori_id" => $request->kategori_id,
-            "stock" => $request->stock,
-            "status" => "Tersedia",
+            "status" => "tersedia",
         ]);
         return redirect("/menu-makanan")->with("success", "Menu makanan berhasil ditambahkan");
     }
@@ -52,8 +51,7 @@ class MenumakananController extends Controller
             "nama_makanan" => $request->nama_makanan,
             "harga" => str_replace('.', '', $request->harga),
             "kategori_id" => $request->kategori_id,
-            "status" => "Tersedia",
-            "stock" => $request->stock,
+            "status" => "tersedia",
         ]);
         return redirect("/menu-makanan")->with("success", "Menu makanan berhasil diedit");
     }

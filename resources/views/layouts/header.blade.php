@@ -39,19 +39,7 @@
                         <ul class="nav flex-nowrap text-nowrap">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="tab"
-                                    href="#kt_header_navs_tab_1">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_2">Forms</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_3">Applications</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_4">Reports</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#kt_header_navs_tab_5">Help</a>
+                                    href="#kt_header_navs_tab_1">Main Menu</a>
                             </li>
                         </ul>
                         <!--begin::Header tabs-->
@@ -1614,7 +1602,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="/menu-makanan">
+                                    <a class="menu-link py-3" href="/daftar-makanan">
                                         <span class="menu-icon">
                                             <!--begin::Svg Icon | path: icons/duotune/general/gen002.svg-->
                                             <span class="svg-icon svg-icon-3">
@@ -1630,7 +1618,7 @@
                                             </span>
                                             <!--end::Svg Icon-->
                                         </span>
-                                        <span class="menu-title">Menu Makanan</span>
+                                        <span class="menu-title">Daftar Makanan</span>
                                     </a>
                                     <!--end:Menu link-->
                                 </div>
@@ -1638,7 +1626,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="/menu-minuman">
+                                    <a class="menu-link py-3" href="/daftar-minuman">
                                         <span class="menu-icon">
                                             <!--begin::Svg Icon | path: icons/duotune/general/gen002.svg-->
                                             <span class="svg-icon svg-icon-3">
@@ -1654,7 +1642,7 @@
                                             </span>
                                             <!--end::Svg Icon-->
                                         </span>
-                                        <span class="menu-title">Menu Minuman</span>
+                                        <span class="menu-title">Daftar Minuman</span>
                                     </a>
                                     <!--end:Menu link-->
                                 </div>

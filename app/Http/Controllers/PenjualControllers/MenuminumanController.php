@@ -25,10 +25,9 @@ class MenuminumanController extends Controller
             "foto_minuman" => $imgname,
             "nama_minuman" => $request->nama_minuman,
             "harga" => str_replace('.','',$request->harga),
-            "stock" => $request->stock,
-            "status" => "Tersedia",
+            "status" => "tersedia",
         ]);
-        return redirect("/menu-minuman")->with("success","Menu minuman berhasil ditambahkan");
+        return redirect("/daftar-minuman")->with("success","Daftar minuman berhasil ditambahkan");
     }
 
     public function edit(request $request,$id){
@@ -46,10 +45,9 @@ class MenuminumanController extends Controller
             "foto_minuman" => $imgname,
             "nama_minuman" => $request->nama_minuman,
             "harga" => str_replace('.','',$request->harga),
-            "stock" => $request->stock,
-            "status" => "Tersedia",
+            "status" => "tersedia",
         ]);
-        return redirect("/menu-minuman")->with("success","Menu Minuman berhasil diedit");
+        return redirect("/daftar-minuman")->with("success","Daftar minuman berhasil diedit");
     }
 
     public function destroy($id){
@@ -58,6 +56,6 @@ class MenuminumanController extends Controller
             File::delete(public_path('images/drinkimg/'.$data->foto_minuman));
         }
         $data->delete();
-        return redirect("/menu-minuman")->with("success","Minuman berhasil dihapus");
+        return redirect("/daftar-minuman")->with("success","Minuman berhasil dihapus");
     }
 }

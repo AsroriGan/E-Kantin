@@ -30,15 +30,15 @@ Route::post('/kategoripost',[categoricontroller::class, 'post']);
 Route::post('/kategoriedit/{id}',[categoricontroller::class, 'edit']);
 Route::get('/kategoridestroy/{id}',[categoricontroller::class, 'destroy']);
 //menu makanan
-Route::get('/menu-makanan',[MenumakananController::class,"index"]);
-Route::post('/menu-makananpost',[MenumakananController::class,"post"]);
-Route::post('/menu-makananedit/{id}',[MenumakananController::class,"edit"]);
-Route::get('/menu-makanandelete/{id}',[MenumakananController::class,"destroy"]);
+Route::get('/daftar-makanan',[MenumakananController::class,"index"]);
+Route::post('/daftar-makananpost',[MenumakananController::class,"post"]);
+Route::post('/daftar-makananedit/{id}',[MenumakananController::class,"edit"]);
+Route::get('/daftar-makanandelete/{id}',[MenumakananController::class,"destroy"]);
 //menu minuman
-Route::get('/menu-minuman',[MenuminumanController::class,"index"]);
-Route::post('/menu-minumanpost',[MenuminumanController::class,"post"]);
-Route::post('/menu-minumanedit/{id}',[MenuminumanController::class,"edit"]);
-Route::get('/menu-minumandelete/{id}',[MenuminumanController::class,"destroy"]);
+Route::get('/daftar-minuman',[MenuminumanController::class,"index"]);
+Route::post('/daftar-minumanpost',[MenuminumanController::class,"post"]);
+Route::post('/daftar-minumanedit/{id}',[MenuminumanController::class,"edit"]);
+Route::get('/daftar-minumandelete/{id}',[MenuminumanController::class,"destroy"]);
 //Profile
 Route::get('/profile',[ProfileController::class, 'profile']);
 

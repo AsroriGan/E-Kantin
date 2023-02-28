@@ -49,7 +49,7 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start me-3 py-2 py-lg-0 gap-2">
 								<!--begin::Title-->
-								<h1 class="d-flex text-dark fw-bold m-0 fs-3"> Daftar Menu Makanan </h1>
+								<h1 class="d-flex text-dark fw-bold m-0 fs-3"> Daftar makanan</h1>
 								<!--end::Title-->
 								<!--begin::Breadcrumb-->
 								<ul class="breadcrumb breadcrumb-dot fw-semibold text-gray-600 fs-7">
@@ -59,7 +59,7 @@
 									</li>
 									<!--end::Item-->
 									<!--begin::Item-->
-									<li class="breadcrumb-item text-gray-600"> daftar Menu Makanan</li>
+									<li class="breadcrumb-item text-gray-600"> Daftar makanan</li>
 									<!--end::Item-->
 								</ul>
 								<!--end::Breadcrumb-->
@@ -68,7 +68,7 @@
 							<!--begin::Actions-->
 							<div class="d-flex align-items-center">
 								<!--begin::Button-->
-								<a href="#" class="btn btn-primary er fs-6 px-8 py-4" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card"> Tambah Menu Makanan</a>
+								<a href="#" class="btn btn-primary er fs-6 px-8 py-4" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card"> Tambah daftar makanan</a>
 								<!--end::Button-->
 							</div>
 							<!--end::Actions-->
@@ -94,12 +94,16 @@
 												<div class="fs-1 fw-bold mb-2 ms-3">{{ $data->nama_makanan }}</div>
 												<label class="fs-4 ms-3 fw-semibold text-hover-primary text-gray-600 m-0">Rp.{{ number_format($data->harga, 0, ',', '.') }}</label>
 												<div class="fw-semibold text-gray-400 ms-3">{{ $data->to_kategori->kategori }}</div>
-												<div class="fw-semibold text-gray-400 ms-3"> Tersedia : {{ $data->stock }}</div>
+												{{-- <div class="fw-semibold text-gray-400 ms-3"> Tersedia : {{ $data->stock }}</div> --}}
 											</div>
 										</div>
 										<div class="d-flex align-items-center fw-semibold">
 											{{-- <span class="badge bg-light text-gray-700 px-3 py-2 me-2">40%</span> --}}
-											<div class="badge badge-light-danger px-3 py-2 me-2">Tidak tersedia</div>
+                                            @if ($data->status == "tersedia")
+											<div class="badge badge-light-success px-3 py-2 me-2">{{$data->status}}</div>
+                                            @else
+											<div class="badge badge-light-danger px-3 py-2 me-2">{{$data->status}}</div>
+                                            @endif
 											{{-- <span class="text-gray-400 fs-7">Impressions</span> --}}
 											<div class="action">
 												<a class="badge badge-primary cur-p" data-bs-toggle="modal" data-bs-target="#modaledit{{ $data->id }}">Edit</a>
@@ -141,7 +145,7 @@
 											<!--begin::Modal body-->
 											<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
 												<!--begin::Form-->
-												<form id="kt_modal_new_card_form" class="form needs-validation" method="post" action="/menu-makananedit/{{ $data->id }}" novalidate="novalidate" enctype="multipart/form-data"> @csrf
+												<form id="kt_modal_new_card_form" class="form needs-validation" method="post" action="/daftar-makananedit/{{ $data->id }}" novalidate="novalidate" enctype="multipart/form-data"> @csrf
 													<!--begin::Input group-->
 													<div class="d-flex flex-column mb-0 fv-row">
 														<!--begin::Label-->
@@ -212,17 +216,6 @@
                                                                 @endforeach
 															</select>
 														</div>
-														<!--begin::Label-->
-														<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-															<span class="required">Stock Makanan</span>
-															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Masukkan Nama Makanan seperti contoh dibawah ini"></i>
-														</label>
-														<!--end::Label-->
-														<div class="input-group mb-5">
-															<span class="input-group-text border-0">Stock : </span>
-															<input type="number" id="harga_makanan" class="form-control form-control-solid" placeholder="10" name="stock" value="{{ $data->stock }}" required />
-															<div class="invalid-feedback"> Harap isi bidang ini </div>
-														</div>
 													</div>
 													<!--end::Input group-->
 													<!--begin::Actions-->
@@ -272,38 +265,6 @@
 										<!--end::Card body-->
 										<!--begin::Card footer-->
 										<!--end::Card footer-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-								<!--begin::Col-->
-								<div class="col-sm-6 col-xl-4">
-									<!--begin::Card-->
-									<div class="card h-100 ">
-										<!--begin::Card body-->
-										<div class="card-body d-flex flex-column px-9 pt-6 pb-8">
-											<!--begin::Heading-->
-											<div class="fs-2tx fw-bold mb-3"> 807k </div>
-											<!--end::Heading-->
-											<!--begin::Stats-->
-											<div class="d-flex align-items-center flex-wrap mb-5 mt-auto fs-6">
-												<!--SVG file not found: icons/duotune/arrows/arr007.svg.svg-->
-												<!--begin::Number-->
-												<div class="fw-bold text-success me-2"> +17.62% </div>
-												<!--end::Number-->
-												<!--begin::Label-->
-												<div class="fw-semibold text-gray-400"> Followers growth </div>
-												<!--end::Label-->
-											</div>
-											<!--end::Stats-->
-											<!--begin::Indicator-->
-											<div class="d-flex align-items-center fw-semibold">
-												<span class="badge bg-light text-gray-700 px-3 py-2 me-2">5%</span>
-												<span class="text-gray-400 fs-7">New trials</span>
-											</div>
-											<!--end::Indicator-->
-										</div>
-										<!--end::Card body-->
 									</div>
 									<!--end::Card-->
 								</div>
@@ -6026,7 +5987,7 @@
 					<!--begin::Modal header-->
 					<div class="modal-header">
 						<!--begin::Modal title-->
-						<h2>Tambah Menu Makanan</h2>
+						<h2>Tambah daftar makanan</h2>
 						<!--end::Modal title-->
 						<!--begin::Close-->
 						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
@@ -6045,7 +6006,7 @@
 					<!--begin::Modal body-->
 					<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
 						<!--begin::Form-->
-						<form id="kt_modal_new_card_form" class="form needs-validation" method="POST" action="/menu-makananpost" novalidate="novalidate" enctype="multipart/form-data"> @csrf
+						<form id="kt_modal_new_card_form" class="form needs-validation" method="POST" action="/daftar-makananpost" novalidate="novalidate" enctype="multipart/form-data"> @csrf
 							<!--begin::Input group-->
 							<div class="d-flex flex-column mb-0 fv-row">
 								<!--begin::Label-->
@@ -6116,17 +6077,6 @@
 										<option value="{{$kategori->id}}">{{$kategori->kategori}}</option>
                                         @endforeach
 									</select>
-								</div>
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
-									<span class="required">Stock Makanan</span>
-									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Masukkan Nama Makanan seperti contoh dibawah ini"></i>
-								</label>
-								<!--end::Label-->
-								<div class="input-group mb-5">
-									<span class="input-group-text border-0">Stock : </span>
-									<input type="number" id="harga_makanan" class="form-control form-control-solid" placeholder="10" name="stock" value="" required />
-									<div class="invalid-feedback"> Harap isi bidang ini </div>
 								</div>
 							</div>
 							<!--end::Input group-->
@@ -6941,7 +6891,7 @@
                 cancelButtonText: 'Batal'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location = '/menu-makanandelete/' + id;
+                    window.location = '/daftar-makanandelete/' + id;
                     // alert(id);
                     Swal.fire(
                         'Dihapus!',
