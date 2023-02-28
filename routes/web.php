@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\PenjualControllers\categoricontroller;
+// use App\Http\Controllers\PenjualControllers\categoricontroller;
 use App\Http\Controllers\PenjualControllers\MenumakananController;
 use App\Http\Controllers\PenjualControllers\MenuminumanController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\categoricontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +43,11 @@ Route::post('/daftar-minumanedit/{id}',[MenuminumanController::class,"edit"]);
 Route::get('/daftar-minumandelete/{id}',[MenuminumanController::class,"destroy"]);
 //Profile
 Route::get('/profile',[ProfileController::class, 'profile']);
+
+
+///login
+Route::get('/login',[LoginController::class, 'login']);
+Route::get('/register',[LoginController::class, 'register']);
+Route::post('/postlogin',[LoginController::class, 'postlogin']);
+Route::post('/postregister',[LoginController::class, 'postregister']);
 
